@@ -340,19 +340,6 @@ we understand how they work.
     * Epistemological tradition
 * Hypothesis: an interest in speculative fiction is an asset here!
 
-## The history of AI
-
-* Neural and symbolic approaches
-* Neats and scruffies
-* Winters and hype cycles
-* Investment bubbles vs technology bubbles
-
-## Cultures and cultural perspectives
-
-* The California ideology
-* Tradition and Transhumanism
-* The Rapture of Nerds
-
 ## Machines of loving grace
 
 ```
@@ -371,6 +358,21 @@ by machines of loving grace
 ## Cultural perspectives 
 
 * Elon Musk likes Iain M. Banks
+
+## Cultures and cultural perspectives
+
+* The California ideology
+* Tradition and Transhumanism
+* The Rapture of Nerds
+* Geeks inheriting the earth
+* Techbros
+
+## The history of AI
+
+* Neural and symbolic approaches
+* Neats and scruffies
+* Winters and hype cycles
+* Investment bubbles vs technology bubbles
 
 ## Environmental impact
 
