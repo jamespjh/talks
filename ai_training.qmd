@@ -52,6 +52,9 @@
 * If we can't define a consensus best practice we can't teach
 * I don't think our consensus will be universal - there will be dissenters
     * I think that's OK?
+* My list is far far far too long
+    * I'm including stuff so we can discuss where to focus our efforts by crossing some stuff off
+    * The syllabus is *always* too full
 
 ### Disclaimer
 
@@ -67,8 +70,7 @@
 ### Broad topic areas
 
 * How LLMs work
-* How to use AIs
-* How to Build with AIs
+* How to use and build with AIs
 * The Politics, Philosophy and Economics of AI
 
 ## How LLMs work
@@ -88,9 +90,6 @@ we understand how they work.
         * Unskilled use is a design objective.
         * Deskilled users may be a systems endpoint?
     * It may be divergent for different tools
-
-### How to build with AIs
-
 * Assertion: a lot of what we do as research engineers in the future will be composing, connecting and designing AIs
 * Hypothesis: this will require a new RTP identity: "research agent engineers?"
     * I have no idea if this is right
@@ -122,14 +121,90 @@ we understand how they work.
 ### The technical substrate
 
 * GPUs, parallel computing, warehouse-scale computers
-  * This will be necessary when we get to the environmental science
-* Linear algebra
+    * This will be necessary when we get to the environmental science
+* Linear algebra stuff
 * Optimisation (SGD, Adam etc)
 
 * This all works nicely as hands-on technology demistifier classes
 * Probably teach at the Cupy/Pytorch level 
 
-### 
+### Machine learning 101
+
+* Some classical ML - maybe decision trees
+* Neural models
+* Deep models
+* Backpropagation
+* Translating fairly obvious stuff into ML jargon
+    * E.g. RELU instead of $x H(x)$, sure ok...
+    * Applied quant sciences people have seen a bunch of this at UG
+* Training, testing, validation, holdout
+* Overfitting
+    * Regularisers
+    * Machine learning as lossy compression
+        * This becomes important when we think about copyright
+
+### Generative models
+
+* What is generative?
+* Distributions and sampling
+* Why can sampling be hard even if p(x) is known?
+* Approaches to sampling
+
+### Transformers
+
+* Honestly this is the least interesting bit
+* It's just network jigglery until you find something that works
+* The more interesting stuff is the principles...
+
+### Some intuitions behind why transformers work
+
+* Feature discovery vs feature engineering in deep networks
+    * This really matters for our understanding of ontological sciences
+* Latent spaces
+    * Vector differences and analogy
+* To what extent are world models induced in order to get good at the word-guessing game?
+    * See also the philosophy course
+
+### Really big data
+
+* The triumph of stamp collecting
+    * Alpha-fold and the PDB
+* Scaling laws and ML performance
+    * A lot of us haven't understood what really really big data means
+
+### Beyond guess-the-next-word
+
+* What is a foundation model?
+    * Fine tuning 
+    * Pretraining and Training  
+    * Transfer learning
+
+### RLHF
+
+* It's NOT just human-in-the-loop on the standard fine tuning loop
+* Reward models trained on human responses
+    * There are open reward models
+* Role of MTurk etc
+* Alignment training
+* Reward hacking
+    * Possibility that this is the origin of
+        * Sycophancy
+        * Hallucination (i.e. guessing preferred over IDK)
+* Biases modelled in
+* Drift and the alignment tax
+* Compare newer approaches
+    * E.g. constitutional AI and the Spec
+    * Important for understanding wider alignment questions
+
+### Beyond guess-the-next-word in practice
+
+* I think we could do a useful carpentries style training here?
+* Go from an open GTNW to a chat model using an open RWM
+* After fine tuning the RWM on responses from the class
+* Is this ridiculous and infeasible?
+    * How much GPU do we need to do this in a tiny way?
+* This is where I would probably focus our efforts
+    * I could be very wrong
 
 ## Building with AIs
 
@@ -140,3 +215,4 @@ we understand how they work.
 * Stateful agents - 
 
 
+## Politics, Philosophy and Economics
