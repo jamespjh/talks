@@ -21,6 +21,11 @@ title: "Some thoughts on training in AI for digital researchers"
     * Carpentries instructor training is PRECISELY the kind of training that works here
     * As scientists, our response to this should be knowledge-based
 
+## Why am I doing this?
+
+* Disagree well
+* Informed disagreement is better disagreement
+
 ## What is this talk?
 
 * It's a sketch of some topics I think we should be thinking about
