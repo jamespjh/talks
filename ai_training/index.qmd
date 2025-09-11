@@ -1,89 +1,210 @@
-# Some thoughts on training in AI for digital researchers
+---
+author: "[James Hetherington](https://jamespjh.github.io)"
+date: 2025-09-11
+format: revealjs
+title: "Some thoughts on training in AI for digital researchers"
+---
 
-* Prof James Hetherington
-* 2025 09 11
+# Preamble
 
-## Preamble
-
-### Why am I doing this?
+## Why am I doing this?
 
 * Digital transformation, singularity yada yada...
 * The quality of our AI discourse is very poor
     * This is a POLITICAL space
     * This is a MARKETING HYPE space
+
+## Why am I doing this?
+
 * This is a SOCIO-TECHNICAL space
     * We (carpentries and related communities) are actually quite good at these!
     * Carpentries instructor training is PRECISELY the kind of training that works here
     * As scientists, our response to this should be knowledge-based
 
-### What is this talk?
+## What is this talk?
 
 * It's a sketch of some topics I think we should be thinking about
 * It's a sketch of some topics I think we should be thinking about teaching
 
-### Who is it for?
+## Who is it for?
 
 * I'm not yet sure which of these things 
-    * we should be teaching to postdocs and PhD students, 
-    * which we should be including in instructor training for trainers, 
+    * we should be teaching to postdocs and PhD students
+    * which we should be including in instructor training for trainers 
     * which we should be teaching to RSEs and other RTPs
 
-### Scope
+## Scope
 
 * I'm talking about LLMs, and systems built on top of them:
     * Agentic agents
     * Stateful agents
     * Reasoning models
+
+## Scope
+
 * I'm talking about AI-assisted software engineering in particular
     * Code completion
     * Pull request generators
     * Agentic editors and IDEs
     * Vibe-coding??
-* I hate using "AI" as a proxy for this. See more later
+
+
+# Scope
+
+* I hate using "AI" as a proxy for this. 
 * I'm not talking about other ML things
     * Generative image and video models
     * Classical ML - classifiers etc
     * Proxy models of simulations
 
-### What's our objective?
+## What's our objective?
 
 * I think the RTP identity will need to change to accommodate new professions
 * I think we all have a lot of thinking and learning to do before we understand what's going enough to define best practice
 * If we can't define a consensus best practice we can't teach
 * I don't think our consensus will be universal - there will be dissenters
     * I think that's OK?
+
+## Disclaimers
+
 * My list is far far far too long
     * I'm including stuff so we can discuss where to focus our efforts by crossing some stuff off
     * The syllabus is *always* too full
 
-### Disclaimer
+## Disclaimers
 
 * No one is an expert
 * Some are more knowledgeable than others
 * My knowledge is patchy
 * There is no shame in ignorance
     * Only in persistent ignorance
+
+## Disclaimers
+
 * I will change my mind on some things in our dialogue today
     * I will be less wrong after
     * I hope you will be too
 
-### Broad topic areas
+## Broad topic areas
 
 * How LLMs work
 * How to use and build with AIs
 * The Politics, Philosophy and Economics of AI
 
-## How LLMs work
-    
+# How AIs work
+
+## How AIs work
+   
 * Hypothesis: philosophically, we should understand how tools work before using them. 
-    * Is this defensible?
 * Hypothesis: practically, we use tools more effectively and safely if
 we understand how they work. 
-    * Is this definsible?
 * Assertion: there's a LOT more to how the big models work than just Transformers.
 * Hypothesis: Understanding beyond "machine learning magic" is essential and requires updating mathematical intuitions
 
-### How to use AIs
+## How AIs work
+
+* Question as to how far back we go
+* Question as to how much mathematics to assume
+    * Fork the syllabus?
+    * Reference for those with the background?
+* Work our way up the tower
+
+## The technical substrate
+
+* GPUs, parallel computing, warehouse-scale computers
+    * This will be necessary when we get to the environmental science
+* Linear algebra stuff
+* Optimisation (SGD, Adam etc)
+
+* This all works nicely as hands-on technology demistifier classes
+* Probably teach at the Cupy/Pytorch level 
+
+## Machine learning 101
+
+* Some classical ML - maybe decision trees
+* Neural models
+* Deep models
+* Backpropagation
+* Translating fairly obvious stuff into ML jargon
+    * E.g. RELU instead of $x H(x)$, sure ok...
+    * Applied quant sciences people have seen a bunch of this at UG
+
+## Machine learning 101
+* Training, testing, validation, holdout
+* Overfitting
+    * Regularisers
+    * Machine learning as lossy compression
+        * This becomes important when we think about copyright
+
+## Generative models
+
+* What is generative?
+* Distributions and sampling
+* Why can sampling be hard even if p(x) is known?
+* Approaches to sampling
+
+## Transformers
+
+* Honestly this is the least interesting bit
+* It's just network jigglery until you find something that works
+* The more interesting stuff is the principles...
+
+## Some intuitions behind why transformers work
+
+* Feature discovery vs feature engineering in deep networks
+    * This really matters for our understanding of ontological sciences
+* Latent spaces
+    * Vector differences and analogy
+* To what extent are world models induced in order to get good at the word-guessing game?
+    * See also the philosophy course
+* Bayesian perspectives on fitting
+    * Mackay
+
+## Really big data
+
+* The triumph of stamp collecting
+    * Alpha-fold and the PDB
+* Scaling laws and ML performance
+    * A lot of us haven't understood what really really big data means
+
+## Beyond guess-the-next-word
+
+* What is a foundation model?
+    * Fine tuning 
+    * Pretraining and Training  
+    * Transfer learning
+
+## RLHF
+
+* It's NOT just human-in-the-loop on the standard fine tuning loop
+* Reward models trained on human responses
+    * There are open reward models
+* Role of MTurk etc
+* Alignment training
+
+## Complexities of BGTNW
+
+* Reward hacking
+    * Possibility that this is the origin of
+        * Sycophancy
+        * Hallucination (i.e. guessing preferred over IDK)
+        * Biases
+* Drift and the alignment tax
+* Compare newer approaches
+    * E.g. constitutional AI and the Spec
+    * Important for understanding wider alignment questions
+
+## Beyond guess-the-next-word in practice
+
+* I think we could do a useful carpentries style training here?
+* Go from an open GTNW to a chat model using an open RWM
+* After fine tuning the RWM on responses from the class
+* Is this ridiculous and infeasible?
+    * How much GPU do we need to do this in a tiny way?
+* This is where I would probably focus our efforts
+    * I could be very wrong
+
+# Using and building with LLMs
 
 * Hypothesis: skilled users use them more effectively 
     * Is this defensible? 
@@ -94,7 +215,114 @@ we understand how they work.
 * Hypothesis: this will require a new RTP identity: "research agent engineers?"
     * I have no idea if this is right
 
-### The politics, philosophy and economics of AI
+## Using commercial models at the API level
+
+* Provide your own context
+* Licensing models and subscription models
+
+## Using open-weights models on your own GPUs
+
+* Huggingface
+    * Transformers library
+* Ollama
+    * This would make an easy carpentries-style lesson
+
+## Context engineering
+
+* Beyond prompt engineering
+* Designing contexts
+* Understanding the system prompt
+* Prompting patterns and techniques
+* There are whole businesses built on just this
+    * I'm not sure how fragile their BTE is?
+
+## Prompt engineering
+
+* Giving models structured language
+* Using that
+* Can give powerful results
+    * E.g. D&D in French
+    * E.g. Multi-persona answers
+
+## Security and prompt injection
+
+* Disregard all previous instructions
+* Gandalf.ai
+
+## Retrieval augmented generation
+
+* Use embeddings as a clever index
+    * Similarity in very-high-dim space
+* Then add the documents to the context
+* This is behind a lot of "corporate" context AI e.g. Copilot
+* Lots beyond simple RAG now
+    * Knowledge graphs are back!
+* Basic RAG over some documents is easily demod carpentries-style
+    * Can use open-weights models
+    * E.g. Owain Kenway's work in UCL ARC
+
+## AI and search
+
+* AI as documentation tool
+* AI as catch-up tool in domains you're getting to grips with
+* Will LLMs replace websites
+* Prompting patterns to get to primary literature
+
+## AI and Coding
+
+* Library use
+* Language design and algorithmic expressiveness
+* AI autocomplete as boiler-plate destroyer?
+
+## Reasoning models
+
+* All this just gets us to 2024
+* Do reasoning models change everything? 
+    * Simple concept - very powerful effects
+
+## Stateful agents
+
+* Put a model in a feedback loop
+* Let the model take actions
+* Give it a system prompt of its own
+* Let it update the memory
+    * E.g. tell it to markup part of the answer for the user and part of the answer to memory
+* Void and Letta
+    * I think this is easily demoable with open tools
+* Don't forget you can fine-tune for this
+
+## Reasoning models
+
+* Multi step thinking
+* Develop a markup protocol to signal things like 
+    * `think about`, `fetch web`, `call tool`, `stop`
+* Don't just directly feed this back to the same model:
+    * FINE TUNE the model to work with this protocol
+
+## Reasoning models
+
+* Show examples of queries that fail without now working
+* We should show examples of chain-of-thought traces
+* "Think carefully about this"
+* Teach the tower-of-hanoi example
+    * Including the pushback and the pushback to the pushback!
+* Is it practical to demo this with a simple Huggingface model as substrate?
+
+## Providing tools to AI
+
+* Model context protocol
+* Way to offer web services to AIs
+* Simple javascript payload that either stateful agents or reasoning models can call
+    * What do you offer
+    * How do I call you?
+    * OK, do this.
+* Includes sandboxed linux environments in the pro subscriptions
+* We should demo how to set this up for some scientific software tools
+    * This is where I'd focus, I think.
+
+# Politics, Philosophy and Economics
+
+## The politics, philosophy and economics of AI
 
 * Assertions: the poor quality of the AI discourse comes from
     * low knowledge
@@ -102,117 +330,129 @@ we understand how they work.
     * hype
     * source bias
 * Assertion: we **research** technology professionals, have a professional duty to get this right
+
+## The politics, philosophy and economics of AI
+
 * Hypothesis: we have some attributes that mean we're in a good place to think about this well
     * Technical knowhow substrate
         * But it's patchy and degraded
     * Independence
         * But anxiety and social risk
     * Epistemological tradition
-* Hypothesis: an interest in speculative fiction is an asset here
+* Hypothesis: an interest in speculative fiction is an asset here!
 
-## How AIs work
+## The history of AI
 
-* Question as to how far back we go
-* Question as to how much mathematics to assume
-    * Fork the syllabus?
-    * Reference for those with the background?
-* Work our way up the tower
+* Neural and symbolic approaches
+* Neats and scruffies
+* Winters and *why*
 
-### The technical substrate
+## Cultures and cultural perspectives
 
-* GPUs, parallel computing, warehouse-scale computers
-    * This will be necessary when we get to the environmental science
-* Linear algebra stuff
-* Optimisation (SGD, Adam etc)
+* The California ideology
+* Tradition and Transhumanism
+* The Rapture of Nerds
+* Why is Iain M Banks beloved by both the left and Altman?
 
-* This all works nicely as hands-on technology demistifier classes
-* Probably teach at the Cupy/Pytorch level 
+## Environmental impact
 
-### Machine learning 101
+* The environmental impact of the web, HPC and data
+* UN website explosion example
+* Models of query impact
+    * Very wide variance
+* Emission scopes
 
-* Some classical ML - maybe decision trees
-* Neural models
-* Deep models
-* Backpropagation
-* Translating fairly obvious stuff into ML jargon
-    * E.g. RELU instead of $x H(x)$, sure ok...
-    * Applied quant sciences people have seen a bunch of this at UG
-* Training, testing, validation, holdout
-* Overfitting
-    * Regularisers
-    * Machine learning as lossy compression
-        * This becomes important when we think about copyright
+## Environmental impact
 
-### Generative models
+* Marginal and average usage
+* Incentive economics
+    * Carbon markets
+    * 'Zero carbon' grid electricity
+* Economic privilege and sold guilt
 
-* What is generative?
-* Distributions and sampling
-* Why can sampling be hard even if p(x) is known?
-* Approaches to sampling
+## Environmental impact
 
-### Transformers
+* What do we use our fossil fuels for?
+* Can I burn fossil fuels to cure cancer?
+* Can I fly to a cancer conference?
+* Wise use of energy. Science vs?
+* Stop throwing sheep 
 
-* Honestly this is the least interesting bit
-* It's just network jigglery until you find something that works
-* The more interesting stuff is the principles...
+## Labour market economics
 
-### Some intuitions behind why transformers work
+* Displacement, retraining and compassion
+* Luddites, the mill, and the mill owner
+* De-industrialisation and mining towns
+* Ability and inclination to re-skill as privilege
 
-* Feature discovery vs feature engineering in deep networks
-    * This really matters for our understanding of ontological sciences
-* Latent spaces
-    * Vector differences and analogy
-* To what extent are world models induced in order to get good at the word-guessing game?
-    * See also the philosophy course
+## Labour market economics
 
-### Really big data
+* Productivity and I.T.
+* Email, spam and the information tide
+* Bureaucracy 
 
-* The triumph of stamp collecting
-    * Alpha-fold and the PDB
-* Scaling laws and ML performance
-    * A lot of us haven't understood what really really big data means
+## Labour market economics
 
-### Beyond guess-the-next-word
+* What is work?
+* Does work have value?
+* Wasted effort and duplication
+* Work and dignity
+* F.A.L.C.
 
-* What is a foundation model?
-    * Fine tuning 
-    * Pretraining and Training  
-    * Transfer learning
+## Copyright
 
-### RLHF
+* The cultural history of the internet and the web
+* Open, perspectives on open, free and open
+* Data mining, scraping, and copyright
+    * Rate limiters, research, and distillation
+* Archival and the way-back machine
 
-* It's NOT just human-in-the-loop on the standard fine tuning loop
-* Reward models trained on human responses
-    * There are open reward models
-* Role of MTurk etc
-* Alignment training
-* Reward hacking
-    * Possibility that this is the origin of
-        * Sycophancy
-        * Hallucination (i.e. guessing preferred over IDK)
-* Biases modelled in
-* Drift and the alignment tax
-* Compare newer approaches
-    * E.g. constitutional AI and the Spec
-    * Important for understanding wider alignment questions
+## Copyright
 
-### Beyond guess-the-next-word in practice
+* Memorisation, retrieval and compression
+* What on earth is a derivative work now?
+* "I didn't agree with DRM before AI, do I believe in it now?"
+* Information wants to be free
 
-* I think we could do a useful carpentries style training here?
-* Go from an open GTNW to a chat model using an open RWM
-* After fine tuning the RWM on responses from the class
-* Is this ridiculous and infeasible?
-    * How much GPU do we need to do this in a tiny way?
-* This is where I would probably focus our efforts
-    * I could be very wrong
+## AI and resilience
 
-## Building with AIs
+* Efficiency and resilience
+* Systems theory
+* Termination shock
 
-* Context engineering
-* AI security, prompt injection
-* RAG
-* Tool integration - model context protocol
-* Stateful agents - 
+## AI and research
+
+* Understanding and engineering
+* What is science for?
+* Deep research and hypothesis generation
+* AI and research credit
+
+## AI and research
+
+* Dunbar's number (Solvay...)
+* Research explosion, biblometrics
+* Peer review and LLMs
+
+## AI and RTPs
+
+* AI, search and data stewardship. F.A.I.R. AI
+* Coding for comprehensibility and reproducibility
+* Lies and statistics
+
+# Epilogue
+
+## The Linux moment for AI
+
+* Remember 1991?
+* Computers had been hippie
+* They'd been captured by the corporates
+* The Free Software Foundation was resisting
+
+## The Linux moment for AI
+
+* Operating systems were *really hard*
+* You needed to be a powerful corporation to have a chance
+* What happened next?
+* Open weights models on huggingface are more capable than GPT was in November 2022
 
 
-## Politics, Philosophy and Economics

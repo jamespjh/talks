@@ -14,10 +14,9 @@ format:
     code-copy: true
     filters:
       - _filters/slugify.lua
-    footer: "{{< meta title >}} - <https://paddyroddy.github.io/talks>"
     hash-type: number
     history: false
-    incremental: true
+    incremental: false
     link-external-icon: true
     logo: favicon.ico
     mermaid:
@@ -27,10 +26,11 @@ format:
       useTextContentForMissingTitles: false
     mobile-view-distance: 10
     preview-links: true
-    slide-number: c
+    slide-number: h/v
     theme: dark
     transition: fade
     view-distance: 10
+  
 
 website:
   favicon: favicon.ico
