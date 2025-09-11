@@ -345,7 +345,8 @@ we understand how they work.
 
 * Neural and symbolic approaches
 * Neats and scruffies
-* Winters and *why*
+* Winters and hype cycles
+* Investment bubbles vs technology bubbles
 
 ## Cultures and cultural perspectives
 
@@ -453,6 +454,8 @@ we understand how they work.
 * Operating systems were *really hard*
 * You needed to be a powerful corporation to have a chance
 * What happened next?
+
+## What happens next?
+
 * Open weights models on huggingface are more capable than GPT was in November 2022
-
-
+* GPUs are getting cheaper in £ per flop/s and Joules per flop fast
