@@ -48,7 +48,6 @@ title: "Some thoughts on training in AI for digital researchers"
     * Agentic editors and IDEs
     * Vibe-coding??
 
-
 # Scope
 
 * I hate using "AI" as a proxy for this. 
@@ -420,6 +419,14 @@ we understand how they work.
 * Efficiency and resilience
 * Systems theory
 * Termination shock
+
+## AI and sovereignty
+
+* International collaboration and open trade in ideas
+* The world we live in
+* Public trust
+* Government and decision making
+* Evidence-based-policy vs policy-based-evidence
 
 ## AI and research
 
