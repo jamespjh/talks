@@ -366,7 +366,6 @@ by machines of loving grace
 
 ## Cultures and cultural perspectives
 
-* The California ideology
 * Tradition and Transhumanism
 * The Rapture of Nerds
 * Geeks inheriting the earth
@@ -378,6 +377,18 @@ by machines of loving grace
 * Neats and scruffies
 * Winters and hype cycles
 * Investment bubbles vs technology bubbles
+
+## Can it think?
+
+* The Golem
+* The Jagged Frontier
+* World Models
+
+## The economic system of AI research
+
+* Competitive scoring metrics
+* Frontier labs 
+* Frontier labs and the universities
 
 ## Environmental impact
 

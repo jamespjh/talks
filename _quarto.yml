@@ -8,6 +8,7 @@ execute:
 format:
   html:
     theme: darkly
+    css: styles.css
   revealjs:
     auto-stretch: false
     callout-appearance: simple
@@ -18,7 +19,6 @@ format:
     history: false
     incremental: false
     link-external-icon: true
-    logo: favicon.ico
     mermaid:
       theme: dark
     menu:
@@ -30,6 +30,7 @@ format:
     theme: dark
     transition: fade
     view-distance: 10
+    css: styles.css
   
 
 website:
@@ -37,7 +38,7 @@ website:
   navbar:
     tools:
       - icon: house
-        href: https://jamespjh.github.io
+        href: https://research.jh.arc.ucl.ac.uk
       - icon: github
         href: https://github.com/jamespjh/talks
   site-url: https://jamespjh.github.io/talks
