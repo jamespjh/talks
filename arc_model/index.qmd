@@ -1,0 +1,60 @@
+---
+author: "James Hetherington"
+date: 2026-06-04
+format: revealjs
+title: "A talk about UCL's model for Research IT"
+---
+
+# Science and Engineering
+
+{{< image-credit
+src="https://research.jh.arc.ucl.ac.uk/inaugural/assets/generated/science_and_engineering.svg"
+alt="Diagram showing the relationship between science and engineering"
+width="100%" >}}
+
+# A Definition
+
+**Engineering Computational Science is the development and application of tools, practices and systems for the efficient,
+trustworthy, ethical and safe use of information technologies as part of trying to produce knowledge about the world.**
+
+# Epistemic Cultures
+
+{{< image-credit
+src="https://research.jh.arc.ucl.ac.uk/inaugural/assets/stored/epistemologies.png"
+width="80%"
+alt="A cartoon illustrating different cultures of knowledge production, from humanities to astronomy."
+credit="Generated with the DALL·E image model, OpenAI, accessed via ChatGPT (April 2026)"
+credit-url="https://chatgpt.com/share/69f1e5c2-27b0-8387-b2a7-aed7b0d5483d" >}}
+
+# Service provision as an academic practice
+
+:::: {.two-col}
+::: {}
+{{< image-credit
+src="https://research.jh.arc.ucl.ac.uk/inaugural/assets/generated/arc.svg"
+alt="UCL ARC's hybrid academic-service model"
+width="100%" >}}
+:::
+::: {}
+* Utility
+* Curiosity
+* Community
+:::
+::::
+
+# Has it worked?
+
+:::: {.two-col}
+::: {}
+* Grown from ~50 to ~150, mostly from external funding
+* [NCR Charger](https://www.ucl.ac.uk/news/2026/feb/ucl-host-ps195m-supercomputing-facility)
+* [CCMI CDT](https://ccmi-cdt.org)
+* FRIDGE TRE work mentioned in UK AI for Science strategy
+:::
+::: {}
+
+* Constant back and forth over identity
+* Resource contention between services and grants is hard
+* Service transfer with IT is still bumpy (but improving) 
+:::
+::::

@@ -15,6 +15,7 @@ format:
     code-copy: true
     filters:
       - _filters/slugify.lua
+      - _extensions/two-col/two-col.lua
     hash-type: number
     history: false
     incremental: false
