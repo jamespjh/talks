@@ -27,7 +27,7 @@ jobs:
       
       - name: Build slides
         run: |
-          quarto render index.qmd
+          quarto render
       
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
