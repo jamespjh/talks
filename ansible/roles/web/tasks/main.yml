@@ -1,0 +1,33 @@
+---
+- name: Copy from the local build of the site to the remote
+  # We are building up every deployment as separate folders, so we don't overwrite them
+  ansible.builtin.copy:
+    src: ../_site/
+    dest: builds/web/talks
+
+- name: Repoint the symlink to the latest clone
+  ansible.builtin.file:
+    src: /home/almalinux/builds/web/talks
+    dest: /var/www/html/talks
+    state: link
+  notify: Restart httpd
+  become: true
+
+- name: Tell SELinux that the linked folder is A-OK
+  ansible.builtin.command: chcon -R -t httpd_sys_content_t /home/almalinux/builds/web/talks/
+  become: true
+
+- name: Tell SELinux that the linking folder is A-OK
+  ansible.builtin.command: chcon -R -t httpd_sys_content_t /var/www/html/talks
+  become: true
+
+- name: Set up the apache config
+  become: true
+  ansible.builtin.copy:
+    src: talks.conf
+    dest: /etc/httpd/conf.d/talks.conf
+  notify: Restart httpd
+
+
+
+
