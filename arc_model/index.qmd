@@ -5,6 +5,27 @@ format: revealjs
 title: "A talk about UCL's model for Research IT"
 ---
 
+# Engineering
+
+{{< image-credit
+src="https://research.jh.arc.ucl.ac.uk/inaugural/assets/stored/postoffice.jpg"
+alt="Protesting sub-postmasters outside the Royal Court of Justice"
+credit="Photo by PA Media, purchased for this lecture" 
+credit_url="https://www.bbc.co.uk/news/articles/cev4mw43w13o" >}}
+
+# Engineering
+
+:::: {.two-col}
+::: {}
+**The tools, practices and systems that enable repeatable, reliable, safe and scalable technical construction.**
+:::
+::: {}
+{{< image-credit 
+src="https://research.jh.arc.ucl.ac.uk/inaugural/assets/stored/earthquake.png" alt="Illustration of an earthquake damaging only some buildings." >}}
+:::
+::::
+
+
 # Science and Engineering
 
 {{< image-credit
