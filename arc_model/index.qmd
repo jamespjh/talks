@@ -79,3 +79,9 @@ width="100%" >}}
 * Service transfer with IT is still bumpy (but improving) 
 :::
 ::::
+
+# What does this mean for data centres and compute?
+
+Are datacentres commodity services best delivered outside HE, or a part of the research exploration?
+
+What novel forms of compute service delivery mechanisms for next-generation research and innovation should we be exploring?
