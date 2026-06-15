@@ -2,7 +2,7 @@
 author: "James Hetherington"
 date: 2026-06-04
 format: revealjs
-title: "A talk about UCL's model for Research IT"
+title: "A talk about Research IT in UCL"
 ---
 
 # Engineering
@@ -80,8 +80,10 @@ width="100%" >}}
 :::
 ::::
 
-# What does this mean for data centres and compute?
+# What does this mean for the festival?
 
-Are datacentres commodity services best delivered outside HE, or a part of the research exploration?
+When you review the talks and posters, you might enjoy thinking of them from this perspective.
 
-What novel forms of compute service delivery mechanisms for next-generation research and innovation should we be exploring?
+* What do the innovations presented imply about how we all enable and support digital research community?
+* What do tools, platforms and techniques presented suggest about ideas for research and innovation?
+* How do both impact on questions of reproducibility, reliability and trust in digital scholarship?
