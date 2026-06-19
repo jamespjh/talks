@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "supporting-code"
+version = "0.1.0"
+description = "Supporting code for talks"
+requires-python = ">=3.11"
+dependencies = ["python-chess>=1.999"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+talks_chess = "supporting_code.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

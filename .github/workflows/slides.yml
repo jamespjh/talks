@@ -16,11 +16,28 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Install chess renderer CLI
+        run: |
+          python -m venv supporting_code/venv
+          source supporting_code/venv/bin/activate
+          pip install -e supporting_code
       
       - name: Render diagrams
         run: |
           cd arc_model/assets
           ./render_diagrams.sh
+
+      - name: Render chess boards
+        run: |
+          source supporting_code/venv/bin/activate
+          cd automating_experimentation/assets
+          ./render_chess.sh
       
       - name: Install Quarto
         uses: quarto-dev/quarto-actions/setup@v2

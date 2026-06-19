@@ -12,3 +12,21 @@ site_libs
 **/*.quarto_ipynb
 
 /.luarc.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.venv/
+venv/
+env/
+dist/
+build/
+*.egg-info/
+.DS_Store

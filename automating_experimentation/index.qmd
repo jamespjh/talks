@@ -1,0 +1,35 @@
+---
+author: "James Hetherington"
+date: 2026-06-04
+format: revealjs
+title: "A talk about Automating discovery"
+---
+
+# Let's learn a game
+
+# Why isn't chess like science?
+
+:::: {.two-col}
+::: {}
+* Perfect knowledge of the state of the world.
+* Perfect knowledge of the rules.
+* Perfect predictability of the consequences of actions.
+:::
+::: {}
+{{< image-credit width="60%" src="assets/generated/starting_position.svg" alt="The starting position of a chess game" >}}
+:::
+::::
+
+# How to play Kriegspiel
+
+# What does Kriegspiel tell us about science?
+
+# Partially Observed Decision Problems
+
+# Physics-free gravity
+
+# Uncertainty in Physics-free gravity
+
+# Put the planets where you want them!
+
+# Automated experimentation
