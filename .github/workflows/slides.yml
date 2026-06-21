@@ -32,6 +32,8 @@ jobs:
         run: |
           cd arc_model/assets
           ./render_diagrams.sh
+          cd automating_experimentation/assets
+          ./render_diagrams.sh
 
       - name: Render chess boards
         run: |

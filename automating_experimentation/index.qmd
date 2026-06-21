@@ -11,9 +11,9 @@ title: "A talk about Automating discovery"
 
 :::: {.two-col}
 ::: {}
-* Perfect knowledge of the state of the world.
-* Perfect knowledge of the rules.
-* Perfect predictability of the consequences of actions.
+* You know where all the pieces are.
+* You know what the valid moves are.
+* You know what counts as a win or a draw.
 :::
 ::: {}
 {{< image-credit width="60%" src="assets/generated/starting_position.svg" alt="The starting position of a chess game" >}}
@@ -22,14 +22,112 @@ title: "A talk about Automating discovery"
 
 # How to play Kriegspiel
 
+:::: {.two-col}
+::: {}
+For Kriegspiel, you need three boards in three rooms
+
+In one room, I have a chess board with:
+
+* My pieces, I know where they are.
+* Enough pieces of the other color to mark my guesses of where the opponents pieces are.
+
+The referee has the only board with the real positions of all the pieces. They run between the player's rooms to update things.
+:::
+::: {}
+{{< image-credit width="60%" src="assets/stored/cartoon.png" alt="Three rooms with chess boards" >}}
+:::
+::::
+
+# How to play Kriegspiel
+
+:::: {.two-col}
+::: {}
+Suppose the position is this:
+{{< image-credit width="40%" src="assets/generated/kriegspiel_position_1.svg" alt="A Kriegspiel position" >}}
+
+...I play Qd8. 
+:::
+::: {}
+The referee tells me "illegal move, there is a pawn on d5" because the queen is blocked by the pawn on d5. 
+{{< image-credit width="60%" src="assets/generated/kriegspiel_position_2.svg" alt="A Kriegspiel position" >}}
+:::
+::::
+
 # What does Kriegspiel tell us about science?
 
-# Partially Observed Decision Problems
+:::: {.two-col}
+::: {}
+* We can play to try to achieve some engineering objective
+* But we also play to learn about the world
+:::
+::: {}
+* We evaluate a move by how much it reduces uncertainty, as well as whether it achieves the objective.
+* We call this a "partially observed decision problem" (PODP).
+:::
+::::
+
+# Simulating gravity
+
+Enough Chess. Let's do some physics.
+
+Simulations and models help us write down our current view of how the world works.
+
+We can make simulators of gravity:
+
+{{< image-credit width="60%" src="https://research.jh.arc.ucl.ac.uk/inaugural/assets/generated/nice.mp4" alt="A simulation of gravity" >}}
 
 # Physics-free gravity
 
-# Uncertainty in Physics-free gravity
+We can do something different: we can **observe** lots of pictures of planets moving around, and try to **learn** the rules of gravity from those observations.
 
-# Put the planets where you want them!
+:::: {.two-col}
+::: {}
+{{< image-credit
+  src="https://research.jh.arc.ucl.ac.uk/inaugural/assets/generated/scatter_grid_5x5.png"
+  alt="25 images of the sky" 
+  width="80%"
+>}}
+:::
+::: {}
+{{< video-credit
+  src="https://research.jh.arc.ucl.ac.uk/inaugural/assets/generated/power_law_convergence.mp4"
+  alt="Animation showing the power-law model's trajectory converging toward the true inverse-square law trajectory as training progresses through each optimisation step"
+  width="100%" >}}
+:::
+::::
+
+# The triumph of stamp collecting.
+
+{{< image-credit
+src="https://research.jh.arc.ucl.ac.uk/inaugural/assets/stored/stamp.jpg"
+alt="A magnifying glass inspecting a stamp collection" 
+credit="Wikimedia commons, Heptagon, CC-SA"
+width="80%"
+credit-url="https://commons.wikimedia.org/wiki/File:Magnifying_glass2.jpg"
+>}}
+
+"All science is either physics or stamp collecting" - attributed to Ernest Rutherford, perhaps apocryphal.
+
+# What if we could move the planets?
+
+:::: {.two-col}
+::: {}
+{{< video-credit
+  src="https://jamespjh.github.io/inaugural-lecture/assets/generated/probabilistic_convergence.mp4"
+  alt="Animation showing the probabilistic power-law model's trajectory converging toward the true inverse-square law trajectory as training progresses through each optimisation step"
+  width="100%" >}}
+:::
+::: {}
+{{< video-credit
+src="https://jamespjh.github.io/inaugural-lecture/assets/generated/acquisition_convergence.mp4"
+alt="Animation showing the acquisition function model's trajectory converging toward the true inverse-square law trajectory as training progresses through each optimisation step"
+width="100%" >}}
+:::
+::::
 
 # Automated experimentation
+
+{{< image-credit
+src="assets/generated/triangle.svg"
+alt="The future of automated experimentation"
+width="100%" >}}
