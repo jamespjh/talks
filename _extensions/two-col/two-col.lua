@@ -54,6 +54,6 @@ function Div(div)
 
   return pandoc.Div(
     pandoc.Blocks({ left, right }),
-    pandoc.Attr("", { "columns" }, {})
+    pandoc.Attr("", { "columns", "two-col" }, {})
   )
 end

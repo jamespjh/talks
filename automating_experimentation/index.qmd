@@ -26,15 +26,10 @@ title: "A talk about Automating discovery"
 ::: {}
 For Kriegspiel, you need three boards in three rooms
 
-In one room, I have a chess board with:
-
-* My pieces, I know where they are.
-* Enough pieces of the other color to mark my guesses of where the opponents pieces are.
-
-The referee has the only board with the real positions of all the pieces. They run between the player's rooms to update things.
+The referee has the only board with the real positions of all the pieces.
 :::
 ::: {}
-{{< image-credit width="60%" src="assets/stored/cartoon.png" alt="Three rooms with chess boards" >}}
+{{< image-credit width="100%" src="assets/stored/cartoon.png" alt="Three rooms with chess boards" >}}
 :::
 ::::
 
@@ -48,7 +43,8 @@ Suppose the position is this:
 ...I play Qd8. 
 :::
 ::: {}
-The referee tells me "illegal move, there is a pawn on d5" because the queen is blocked by the pawn on d5. 
+The referee tells me "illegal move, there is a pawn on d5".
+
 {{< image-credit width="60%" src="assets/generated/kriegspiel_position_2.svg" alt="A Kriegspiel position" >}}
 :::
 ::::
@@ -68,8 +64,6 @@ The referee tells me "illegal move, there is a pawn on d5" because the queen is 
 
 # Simulating gravity
 
-Enough Chess. Let's do some physics.
-
 Simulations and models help us write down our current view of how the world works.
 
 We can make simulators of gravity:
@@ -78,14 +72,15 @@ We can make simulators of gravity:
 
 # Physics-free gravity
 
-We can do something different: we can **observe** lots of pictures of planets moving around, and try to **learn** the rules of gravity from those observations.
+* We can **observe** lots of pictures of planets.
+* Try to **learn** the rules of gravity from those observations.
 
 :::: {.two-col}
 ::: {}
 {{< image-credit
-  src="https://research.jh.arc.ucl.ac.uk/inaugural/assets/generated/scatter_grid_5x5.png"
+  src="https://jamespjh.github.io/inaugural-lecture/assets/generated/scatter_grid_5x5.png"
   alt="25 images of the sky" 
-  width="80%"
+  width="60%"
 >}}
 :::
 ::: {}
@@ -102,7 +97,7 @@ We can do something different: we can **observe** lots of pictures of planets mo
 src="https://research.jh.arc.ucl.ac.uk/inaugural/assets/stored/stamp.jpg"
 alt="A magnifying glass inspecting a stamp collection" 
 credit="Wikimedia commons, Heptagon, CC-SA"
-width="80%"
+width="40%"
 credit-url="https://commons.wikimedia.org/wiki/File:Magnifying_glass2.jpg"
 >}}
 
@@ -115,13 +110,13 @@ credit-url="https://commons.wikimedia.org/wiki/File:Magnifying_glass2.jpg"
 {{< video-credit
   src="https://jamespjh.github.io/inaugural-lecture/assets/generated/probabilistic_convergence.mp4"
   alt="Animation showing the probabilistic power-law model's trajectory converging toward the true inverse-square law trajectory as training progresses through each optimisation step"
-  width="100%" >}}
+  width="70%" >}}
 :::
 ::: {}
 {{< video-credit
 src="https://jamespjh.github.io/inaugural-lecture/assets/generated/acquisition_convergence.mp4"
 alt="Animation showing the acquisition function model's trajectory converging toward the true inverse-square law trajectory as training progresses through each optimisation step"
-width="100%" >}}
+width="70%" >}}
 :::
 ::::
 
@@ -130,4 +125,4 @@ width="100%" >}}
 {{< image-credit
 src="assets/generated/triangle.svg"
 alt="The future of automated experimentation"
-width="100%" >}}
+width="80%" >}}

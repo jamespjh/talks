@@ -115,6 +115,17 @@
   opacity: 0.88;
 }
 
+/* Nudge reveal title text down slightly without affecting body copy. */
+.reveal .quarto-title-block .title,
+.reveal .slides section.title-slide h1 {
+  font-size: 1.8em;
+}
+
+/* Slightly reduce typography within custom two-column layout blocks. */
+.reveal .columns.two-col {
+  font-size: 0.88em;
+}
+
 .navbar {
   background-color: var(--ucl-light-purple);
 }
