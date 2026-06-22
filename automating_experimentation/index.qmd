@@ -1,6 +1,6 @@
 ---
 author: "James Hetherington"
-date: 2026-06-04
+date: 2026-07-22
 format: revealjs
 title: "A talk about Automating discovery"
 ---
@@ -103,6 +103,13 @@ credit-url="https://commons.wikimedia.org/wiki/File:Magnifying_glass2.jpg"
 
 "All science is either physics or stamp collecting" - attributed to Ernest Rutherford, perhaps apocryphal.
 
+# Uncertainty in physics-free gravity
+
+{{< video-credit
+  src="https://jamespjh.github.io/inaugural-lecture/assets/generated/probabilistic_convergence.mp4"
+  alt="Animation showing the probabilistic power-law model's trajectory converging toward the true inverse-square law trajectory as training progresses through each optimisation step"
+  width="45%" >}}
+
 # What if we could move the planets?
 
 :::: {.two-col}
@@ -110,13 +117,13 @@ credit-url="https://commons.wikimedia.org/wiki/File:Magnifying_glass2.jpg"
 {{< video-credit
   src="https://jamespjh.github.io/inaugural-lecture/assets/generated/probabilistic_convergence.mp4"
   alt="Animation showing the probabilistic power-law model's trajectory converging toward the true inverse-square law trajectory as training progresses through each optimisation step"
-  width="70%" >}}
+  width="75%" >}}
 :::
 ::: {}
 {{< video-credit
 src="https://jamespjh.github.io/inaugural-lecture/assets/generated/acquisition_convergence.mp4"
 alt="Animation showing the acquisition function model's trajectory converging toward the true inverse-square law trajectory as training progresses through each optimisation step"
-width="70%" >}}
+width="90%" >}}
 :::
 ::::
 
