@@ -27,7 +27,17 @@ jobs:
           python -m venv supporting_code/venv
           source supporting_code/venv/bin/activate
           pip install -e supporting_code
+
+      - name: Install ffmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
       
+      - name: Install Graphviz
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y graphviz
+
       - name: Render diagrams
         run: |
           cd arc_model/assets
