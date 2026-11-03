@@ -52,7 +52,7 @@ credit-url="https://chatgpt.com/share/69f1e5c2-27b0-8387-b2a7-aed7b0d5483d" >}}
 :::: {.two-col}
 ::: {}
 {{< image-credit
-src="https://research.jh.arc.ucl.ac.uk/inaugural/assets/generated/arc.svg"
+src="assets/generated/arc.svg"
 alt="UCL ARC's hybrid academic-service model"
 width="100%" >}}
 :::

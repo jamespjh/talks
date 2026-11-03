@@ -30,3 +30,6 @@ dist/
 build/
 *.egg-info/
 .DS_Store
+# Rendered from assets/sources by render_*.sh (in CI before quarto render)
+**/assets/generated/*
+!**/assets/generated/stub.txt
