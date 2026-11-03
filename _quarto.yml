@@ -9,7 +9,9 @@ format:
   html:
     theme: darkly
     css: styles.css
+    canonical-url: true
   revealjs:
+    canonical-url: true
     auto-stretch: false
     callout-appearance: simple
     code-copy: true
@@ -42,5 +44,5 @@ website:
         href: https://research.jh.arc.ucl.ac.uk
       - icon: github
         href: https://github.com/jamespjh/talks
-  site-url: https://jamespjh.github.io/talks
+  site-url: https://research.jh.arc.ucl.ac.uk/talks
   title: Talks by James Hetherington
