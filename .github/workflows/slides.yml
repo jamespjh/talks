@@ -59,6 +59,13 @@ jobs:
         run: |
           quarto render
       
+      - name: Package the site for the Condenser deploy
+        # jh-infrastructure's deploy_talks.yml downloads this from Pages rather than rebuilding
+        run: |
+          echo "$GITHUB_SHA" > _site/build-sha.txt
+          tar czf "$RUNNER_TEMP/site.tar.gz" -C _site .
+          mv "$RUNNER_TEMP/site.tar.gz" _site/site.tar.gz
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
