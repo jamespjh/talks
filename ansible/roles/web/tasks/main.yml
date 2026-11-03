@@ -1,6 +1,6 @@
 ---
 - name: Copy from the local build of the site to the remote
-  # We are building up every deployment as separate folders, so we don't overwrite them
+  # Each deploy overwrites the same folder; _site is downloaded by jh-infrastructure's deploy_talks.yml
   ansible.builtin.copy:
     src: ../_site/
     dest: builds/web/talks
