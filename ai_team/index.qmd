@@ -1,0 +1,140 @@
+---
+author: "James Hetherington"
+date: 2026-11-04
+format: revealjs
+title: "Agents, and the UCL AI team"
+subtitle: "ISD Townhall"
+---
+
+# What is an agent?
+
+{{< image-credit src="assets/generated/agent.svg" alt="Diagram of an agent: you talk to a harness, which calls a model through a gateway and model serving, and uses tools, skills and memory" width="100%" >}}
+
+# The harness
+
+{{< image-credit src="assets/generated/agent_harness.svg" alt="The agent diagram with the harness highlighted" width="92%" >}}
+
+::: {.piece}
+The loop: ask the model, do what it asks, feed back the result, repeat. This is the product you see.
+
+![](assets/stored/logos/claude.svg){.logo alt="Claude"} ![](assets/stored/logos/githubcopilot.svg){.logo alt="GitHub Copilot"} ![](assets/stored/logos/cursor.svg){.logo alt="Cursor"} [ChatGPT]{.badge} [M365 Copilot]{.badge} [Airia]{.badge}
+:::
+
+# The model
+
+{{< image-credit src="assets/generated/agent_model.svg" alt="The agent diagram with the model highlighted" width="92%" >}}
+
+::: {.piece}
+Predicts the next piece of text. Knows its training, plus what's in front of it — nothing else.
+
+Frontier: ![](assets/stored/logos/claude.svg){.logo alt="Claude"} ![](assets/stored/logos/googlegemini.svg){.logo alt="Gemini"} [GPT]{.badge} · Open weights: ![](assets/stored/logos/meta.svg){.logo alt="Llama"} ![](assets/stored/logos/mistralai.svg){.logo alt="Mistral"} ![](assets/stored/logos/qwen.svg){.logo alt="Qwen"}
+:::
+
+# The inference platform
+
+{{< image-credit src="assets/generated/agent_platform.svg" alt="The agent diagram with the gateway and model serving highlighted" width="92%" >}}
+
+::: {.piece}
+Same model, different place: who sees the data, what it costs, which contract. Gateway = token management; serving = hosting management.
+
+Maker's own: ![](assets/stored/logos/anthropic.svg){.logo alt="Anthropic"} [OpenAI]{.badge} · Cloud: [AWS Bedrock]{.badge} [Azure]{.badge} ![](assets/stored/logos/googlecloud.svg){.logo alt="Google Cloud Vertex"} · Ours: [LiteLLM]{.badge} ![](assets/stored/logos/vllm.svg){.logo alt="vLLM"} ![](assets/stored/logos/huggingface.svg){.logo alt="Hugging Face"}
+:::
+
+# Skills
+
+{{< image-credit src="assets/generated/agent_skills.svg" alt="The agent diagram with skills highlighted" width="92%" >}}
+
+::: {.piece}
+Packaged know-how — instructions and scripts — loaded only when the task needs them. e.g. "review an ADR", "draft a runbook".
+:::
+
+# Tools, via MCP
+
+{{< image-credit src="assets/generated/agent_tools.svg" alt="The agent diagram with tools highlighted" width="92%" >}}
+
+::: {.piece}
+Let the agent *act*: search, read, file a ticket. MCP is one standard plug, so any agent can use any system.
+
+![](assets/stored/logos/modelcontextprotocol.svg){.logo alt="Model Context Protocol"} ![](assets/stored/logos/jira.svg){.logo alt="Jira"} [ServiceNow]{.badge} [SharePoint]{.badge}
+:::
+
+# Memory
+
+{{< image-credit src="assets/generated/agent_memory.svg" alt="The agent diagram with memory highlighted" width="92%" >}}
+
+::: {.piece}
+The model forgets everything between calls; the harness keeps notes. Yesterday an agent fixed our web server — its notes are in the repo for the next one.
+:::
+
+# At UCL
+
+{{< image-credit src="assets/generated/agent_ucl.svg" alt="The agent diagram filled in with UCL pieces: the Foundry, a LiteLLM gateway, vLLM on Condenser GPUs, commercial models, and MCP servers for Jira, MyServices and UCL policies" width="100%" >}}
+
+# The AI team roadmap
+
+{{< image-credit src="assets/generated/roadmap.svg" alt="Roadmap with four strands: provider deals, local plus commercial, MCP and RAG, governance; each with done, now and next" width="100%" >}}
+
+# Managing shadow AI
+
+{{< image-credit src="assets/generated/agent_ucl_harness.svg" alt="The UCL agent diagram with the Foundry highlighted" width="92%" >}}
+
+::: {.piece}
+Staff already use consumer AI with UCL data; a trusted alternative beats a ban. Agreements with key providers, and the AI@UCL Foundry.
+:::
+
+::: {.notes}
+Say out loud: which provider agreements are signed or in negotiation. Not on the slide.
+:::
+
+# Local GPUs + commercial models
+
+{{< image-credit src="assets/generated/gateway.svg" alt="Apps and agents go through a LiteLLM gateway, which routes to vLLM on Condenser GPUs or to commercial providers" width="100%" >}}
+
+::: {.piece}
+Tokenomics: fixed-cost local capacity for the bulk, pay-per-token for the hard stuff.
+:::
+
+::: {.notes}
+Say out loud: LiteLLM is running with vLLM behind it on Condenser; which models we serve today.
+:::
+
+# Who manages what?
+
+{{< image-credit src="assets/generated/stacks.svg" alt="Table comparing self-hosted, Microsoft 365 Copilot and Anthropic: self-hosted means UCL runs every layer; Copilot brings 365 integration; Anthropic brings model hosting and Claude Code" width="90%" >}}
+
+# We need both
+
+:::: {.two-col}
+::: {}
+**Self-hosted**
+
+* Some of our work can't leave UCL
+* Some colleagues want locality on principle
+* But we run the whole stack
+:::
+::: {}
+**Commercial**
+
+* Copilot: 365 integration comes built in
+* Anthropic: hosting comes built in, well integrated with Claude Code
+* But data leaves UCL
+:::
+::::
+
+# MCP and RAG for UCL
+
+{{< image-credit src="assets/generated/agent_ucl_tools.svg" alt="The UCL agent diagram with MCP servers for Jira, MyServices and UCL policies highlighted" width="92%" >}}
+
+::: {.piece}
+Early tests with Jira, MyServices and UCL policies (via RAG). Next: a managed MCP registry and knowledge service.
+:::
+
+::: {.notes}
+Say out loud: what we tried with each, and how it went.
+:::
+
+# Governance (proposed)
+
+{{< image-credit src="assets/generated/governance.svg" alt="Proposed AI governance: technology portfolios with AI leads and a use-case library hand questions to a new AI Technology Action Group; Research and Innovation, Education and PS AI groups report to a new AI Strategy Committee, which reports to UMC and works with DDTC and DSSG" width="62%" >}}
+
+# Questions?

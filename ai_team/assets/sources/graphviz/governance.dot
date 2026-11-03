@@ -1,0 +1,60 @@
+// Proposed AI governance structure.
+// White = new body, purple = existing body (as in the original slide's key).
+digraph governance {
+    graph [bgcolor="#3c1657", rankdir="BT", nodesep="0.35", ranksep="0.55", pad="0.2",
+           fontname="Helvetica", fontcolor="#f5f5f5", newrank="true"];
+    node  [shape="box", style="filled,rounded", fontname="Helvetica", fontsize="17",
+           margin="0.2,0.1", penwidth="2", color="#a433ff"];
+    edge  [color="#f5f5f5", penwidth="1.6", arrowsize="0.7", fontname="Helvetica",
+           fontcolor="#f5f5f5", fontsize="13"];
+
+    // existing bodies
+    node [fillcolor="#a433ff", fontcolor="#f5f5f5", color="#f5f5f5"];
+    umc  [label="UMC", group="spine"];
+    ddtc [label=<DDTC<BR/><FONT POINT-SIZE="12">DSP roadmaps · portfolio funding</FONT>>];
+    dssg [label="DSSG"];
+    edu  [label="Education\nAI group", group="spine"];
+    portfolios [group="spine", label=<Technology portfolios<BR/><FONT POINT-SIZE="12">existing portfolios appoint AI leads</FONT>>];
+
+    // new bodies
+    node [fillcolor="#f5f5f5", fontcolor="#3c1657", color="#a433ff"];
+    strategy [group="spine", label=<<B>AI Strategy Committee</B><BR/><FONT POINT-SIZE="13">faculty representatives · UCL AI vision &amp; principles</FONT>>, fontsize="20"];
+    ri   [label="Research &\nInnovation AI group"];
+    ps   [label="PS AI group"];
+    atag [group="spine", label=<<B>AI Technology Action Group</B><BR/><FONT POINT-SIZE="13">technology, service &amp; pilot roadmaps · joined-up AI services</FONT>>];
+    leads   [label="8 × AI leads", fontsize="15"];
+    library [label="Use-case library", fontsize="15"];
+
+    // area groups sit side by side
+    subgraph cluster_areas {
+        label=<<FONT POINT-SIZE="13">area AI vision · principles incl. safety &amp; ethics · area roadmaps</FONT>>;
+        labelloc="t"; color="#a433ff"; style="rounded,dashed"; penwidth="1.5";
+        ri; edu; ps;
+        { rank="same"; ri; edu; ps; }
+        ri -> edu -> ps [style="invis"];
+    }
+
+    // portfolio contents
+    leads -> portfolios [arrowhead="none", style="dotted"];
+    library -> portfolios [arrowhead="none", style="dotted"];
+
+    portfolios -> atag [label="  “how to” / “should we”\n  questions"];
+    atag -> edu [style="invis"];
+    edu -> strategy [label="  share roadmaps,\n  escalate high risk"];
+    ri -> strategy; ps -> strategy;
+    strategy -> umc [label="  reports progress against\n  DSP & strategic ambition"];
+    ddtc -> strategy [dir="back"];
+    strategy -> dssg;
+
+    { rank="same"; ddtc; strategy; dssg; }
+    { rank="same"; leads; library; }
+
+    // key, beside the portfolios
+    key [shape="plaintext", style="", label=<
+      <TABLE BORDER="0" CELLSPACING="4" CELLPADDING="5">
+        <TR><TD BGCOLOR="#f5f5f5" STYLE="ROUNDED"><FONT COLOR="#3c1657" POINT-SIZE="13">new</FONT></TD></TR>
+        <TR><TD BGCOLOR="#a433ff" STYLE="ROUNDED"><FONT COLOR="#f5f5f5" POINT-SIZE="13">existing</FONT></TD></TR>
+      </TABLE>>];
+    portfolios -> key [style="invis"];
+    { rank="same"; portfolios; key; }
+}

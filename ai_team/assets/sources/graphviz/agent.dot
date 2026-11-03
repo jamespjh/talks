@@ -1,0 +1,35 @@
+// How the pieces of an agent fit together.
+// Each node has a "role"; render_diagrams.sh uses ../highlight.g to make one
+// copy of this diagram per role with that piece lit up (agent_<role>.svg).
+// The inference platform is two layers: a gateway (token management) and
+// model serving (hosting management).
+digraph agent {
+    graph [bgcolor="#3c1657", rankdir="LR", nodesep="0.4", ranksep="0.7", pad="0.2",
+           fontname="Helvetica", fontcolor="#f5f5f5"];
+    node  [shape="box", style="filled,rounded", fillcolor="#f5f5f5", fontcolor="#3c1657",
+           color="#a433ff", penwidth="2", fontname="Helvetica", fontsize="18", margin="0.22,0.12"];
+    edge  [color="#a433ff", penwidth="2", arrowsize="0.8", fontname="Helvetica",
+           fontcolor="#f5f5f5", fontsize="14"];
+
+    you      [role="you",      label="You",                          shape="ellipse"];
+    harness  [role="harness",  label="Harness\n(the agent loop)",    fontsize="22"];
+    gateway  [role="platform", label="Gateway\n(token management)"];
+    serving  [role="platform", label="Model serving\n(hosting on GPUs)"];
+    model    [role="model",    label="Model\n(LLM)"];
+    tools    [role="tools",    label="Tools\n(via MCP)"];
+    systems  [role="tools",    label="Systems & data", shape="cylinder"];
+    skills   [role="skills",   label="Skills"];
+    memory   [role="memory",   label="Memory", shape="cylinder"];
+
+    you      -> harness  [role="you",      dir="both", label="ask / answer"];
+    harness  -> gateway  [role="platform", dir="both", label="prompt / reply"];
+    gateway  -> serving  [role="platform", dir="both"];
+    serving  -> model    [role="model",    dir="both"];
+    harness  -> tools    [role="tools",    dir="both", label="call / result"];
+    tools    -> systems  [role="tools",    dir="both"];
+    harness  -> skills   [role="skills",   label="load when relevant"];
+    harness  -> memory   [role="memory",   dir="both", label="recall / record"];
+
+    { rank="same"; gateway; tools; }
+    { rank="same"; serving; systems; }
+}

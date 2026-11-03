@@ -1,0 +1,52 @@
+// Who manages what: the same agent stack under three options.
+// Purple cells: UCL runs it. White cells: comes with the product.
+digraph stacks {
+    graph [bgcolor="#3c1657", pad="0.2", fontname="Helvetica"];
+    node  [shape="plaintext", fontname="Helvetica"];
+
+    t [label=<
+<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="6" CELLPADDING="10">
+  <TR>
+    <TD></TD>
+    <TD><FONT COLOR="#f5f5f5" POINT-SIZE="20"><B>Self-hosted, open</B></FONT></TD>
+    <TD><FONT COLOR="#f5f5f5" POINT-SIZE="20"><B>Microsoft 365 Copilot</B></FONT></TD>
+    <TD><FONT COLOR="#f5f5f5" POINT-SIZE="20"><B>Anthropic (Claude)</B></FONT></TD>
+  </TR>
+  <TR>
+    <TD ALIGN="RIGHT"><FONT COLOR="#f5f5f5" POINT-SIZE="18">Harness</FONT></TD>
+    <TD BGCOLOR="#a433ff" STYLE="ROUNDED"><FONT COLOR="#f5f5f5" POINT-SIZE="16">we run one</FONT></TD>
+    <TD BGCOLOR="#f5f5f5" STYLE="ROUNDED"><FONT COLOR="#3c1657" POINT-SIZE="16">Copilot</FONT></TD>
+    <TD BGCOLOR="#f5f5f5" STYLE="ROUNDED"><FONT COLOR="#3c1657" POINT-SIZE="16">Claude, Claude Code</FONT></TD>
+  </TR>
+  <TR>
+    <TD ALIGN="RIGHT"><FONT COLOR="#f5f5f5" POINT-SIZE="18">Tools &amp; integrations</FONT></TD>
+    <TD BGCOLOR="#a433ff" STYLE="ROUNDED"><FONT COLOR="#f5f5f5" POINT-SIZE="16">we build MCP servers</FONT></TD>
+    <TD BGCOLOR="#f5f5f5" STYLE="ROUNDED"><FONT COLOR="#3c1657" POINT-SIZE="16">365 data built in</FONT></TD>
+    <TD BGCOLOR="#a433ff" STYLE="ROUNDED"><FONT COLOR="#f5f5f5" POINT-SIZE="16">we connect via MCP</FONT></TD>
+  </TR>
+  <TR>
+    <TD ALIGN="RIGHT"><FONT COLOR="#f5f5f5" POINT-SIZE="18">Gateway (tokens)</FONT></TD>
+    <TD BGCOLOR="#a433ff" STYLE="ROUNDED"><FONT COLOR="#f5f5f5" POINT-SIZE="16">LiteLLM</FONT></TD>
+    <TD BGCOLOR="#f5f5f5" STYLE="ROUNDED"><FONT COLOR="#3c1657" POINT-SIZE="16">per-seat licence</FONT></TD>
+    <TD BGCOLOR="#f5f5f5" STYLE="ROUNDED"><FONT COLOR="#3c1657" POINT-SIZE="16">built-in spend limits</FONT></TD>
+  </TR>
+  <TR>
+    <TD ALIGN="RIGHT"><FONT COLOR="#f5f5f5" POINT-SIZE="18">Model serving</FONT></TD>
+    <TD BGCOLOR="#a433ff" STYLE="ROUNDED"><FONT COLOR="#f5f5f5" POINT-SIZE="16">vLLM</FONT></TD>
+    <TD BGCOLOR="#f5f5f5" STYLE="ROUNDED"><FONT COLOR="#3c1657" POINT-SIZE="16">Microsoft</FONT></TD>
+    <TD BGCOLOR="#f5f5f5" STYLE="ROUNDED"><FONT COLOR="#3c1657" POINT-SIZE="16">Anthropic</FONT></TD>
+  </TR>
+  <TR>
+    <TD ALIGN="RIGHT"><FONT COLOR="#f5f5f5" POINT-SIZE="18">GPUs</FONT></TD>
+    <TD BGCOLOR="#a433ff" STYLE="ROUNDED"><FONT COLOR="#f5f5f5" POINT-SIZE="16">Condenser</FONT></TD>
+    <TD BGCOLOR="#f5f5f5" STYLE="ROUNDED"><FONT COLOR="#3c1657" POINT-SIZE="16">Microsoft</FONT></TD>
+    <TD BGCOLOR="#f5f5f5" STYLE="ROUNDED"><FONT COLOR="#3c1657" POINT-SIZE="16">Anthropic</FONT></TD>
+  </TR>
+  <TR>
+    <TD ALIGN="RIGHT"><FONT COLOR="#f5f5f5" POINT-SIZE="18"><B>Data stays at UCL</B></FONT></TD>
+    <TD><FONT COLOR="#9ef7b1" POINT-SIZE="18"><B>yes</B></FONT></TD>
+    <TD><FONT COLOR="#f5f5f5" POINT-SIZE="18">no</FONT></TD>
+    <TD><FONT COLOR="#f5f5f5" POINT-SIZE="18">no</FONT></TD>
+  </TR>
+</TABLE>>];
+}

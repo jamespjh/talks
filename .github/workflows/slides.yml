@@ -46,6 +46,9 @@ jobs:
           cd ../../automating_experimentation/assets
           ./render_diagrams.sh
 
+          cd ../../ai_team/assets
+          ./render_diagrams.sh
+
       - name: Render chess boards
         run: |
           source supporting_code/venv/bin/activate

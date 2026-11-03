@@ -1,0 +1,32 @@
+// The same shape as agent.dot, filled in with the pieces the UCL AI team is building.
+// Roles match agent.dot so the same highlighting applies (agent_ucl_<role>.svg).
+digraph agent_ucl {
+    graph [bgcolor="#3c1657", rankdir="LR", nodesep="0.35", ranksep="0.7", pad="0.2",
+           fontname="Helvetica", fontcolor="#f5f5f5"];
+    node  [shape="box", style="filled,rounded", fillcolor="#f5f5f5", fontcolor="#3c1657",
+           color="#a433ff", penwidth="2", fontname="Helvetica", fontsize="17", margin="0.2,0.1"];
+    edge  [color="#a433ff", penwidth="2", arrowsize="0.8", dir="both"];
+
+    you        [role="you",      label="UCL staff\n& students", shape="ellipse"];
+    harness    [role="harness",  label="AI@UCL Foundry\nCopilot · Claude · …", fontsize="19"];
+    gateway    [role="platform", label="LiteLLM gateway\nkeys · quotas · usage · routing"];
+    vllm       [role="platform", label="vLLM\non Condenser GPUs"];
+    local      [role="model",    label="Open models\n(UCL-hosted)"];
+    commercial [role="model",    label="Commercial models\n(enterprise agreements)"];
+    mcp        [role="tools",    label="MCP servers"];
+    jira       [role="tools",    label="Jira", shape="cylinder"];
+    myserv     [role="tools",    label="MyServices", shape="cylinder"];
+    policies   [role="tools",    label="UCL policies\n(RAG)", shape="cylinder"];
+
+    you -> harness;
+    harness -> gateway [role="platform"];
+    gateway -> vllm [role="platform"];
+    vllm -> local [role="model"];
+    gateway -> commercial [role="model"];
+    harness -> mcp [role="tools"];
+    mcp -> jira [role="tools"];
+    mcp -> myserv [role="tools"];
+    mcp -> policies [role="tools"];
+
+    { rank="same"; gateway; mcp; }
+}

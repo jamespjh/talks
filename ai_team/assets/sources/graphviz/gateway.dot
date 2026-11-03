@@ -1,0 +1,19 @@
+// Tokenomics: one front door (LiteLLM), routing between UCL-hosted (vLLM) and commercial models.
+digraph gateway {
+    graph [bgcolor="#3c1657", rankdir="LR", nodesep="0.5", ranksep="0.9", pad="0.2",
+           fontname="Helvetica", fontcolor="#f5f5f5"];
+    node  [shape="box", style="filled,rounded", fillcolor="#f5f5f5", fontcolor="#3c1657",
+           color="#a433ff", penwidth="2", fontname="Helvetica", fontsize="17", margin="0.22,0.12"];
+    edge  [color="#a433ff", penwidth="2", arrowsize="0.8", fontname="Helvetica",
+           fontcolor="#f5f5f5", fontsize="14"];
+
+    apps    [label="Apps & agents\nacross UCL"];
+    gateway [label="Gateway: LiteLLM\ntoken management\n\none API · a key per project\nquotas · usage by team\nmodel roles: ucl-default, ucl-fast…",
+             fillcolor="#a433ff", fontcolor="#f5f5f5", color="#f5f5f5", penwidth="3", fontsize="18"];
+    vllm    [label="Serving: vLLM\nhosting management\n\nopen models on Condenser GPUs\nfixed cost · data stays at UCL"];
+    comm    [label="Commercial providers\nhosting included\n\npay per token · most capable"];
+
+    apps -> gateway;
+    gateway -> vllm [label="confidential / bulk"];
+    gateway -> comm [label="needs frontier capability\n(redacted before egress)"];
+}

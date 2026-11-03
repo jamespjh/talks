@@ -27,7 +27,7 @@
    Override that URI directly so the icon uses UCL light purple. */
 .reveal .slide-menu-button .fas::before,
 .reveal .slide-menu-button .fa::before {
-  background-image: url("assets/generated/menu-icon-purple.svg") !important;
+  background-image: url("assets/stored/menu-icon-purple.svg") !important;
 }
 
 /* Tighten pseudocode blocks so ~80 cols fit in one content column on slides. */
@@ -128,4 +128,33 @@
 
 .navbar {
   background-color: var(--ucl-light-purple);
+}
+/* Rows of product logos and text badges (for brands without a free logo). */
+.reveal img.logo {
+  height: 1.3em;
+  margin: 0 0.35em 0 0;
+  vertical-align: middle;
+  border: none;
+  box-shadow: none;
+  background: none;
+}
+
+.reveal .badge {
+  display: inline-block;
+  padding: 0.05em 0.45em;
+  margin: 0.1em 0.3em 0.1em 0;
+  border: 2px solid var(--ucl-light-purple);
+  border-radius: 0.35em;
+  font-size: 0.8em;
+  vertical-align: middle;
+}
+
+/* Short caption-and-logos line under a full-width diagram. */
+.reveal .piece {
+  font-size: 0.62em;
+  line-height: 1.35;
+  margin-top: 0.4em;
+}
+.reveal .piece p {
+  margin: 0.35em 0;
 }
