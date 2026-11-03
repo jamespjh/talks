@@ -98,6 +98,16 @@ Tokenomics: fixed-cost local capacity for the bulk, pay-per-token for the hard s
 Say out loud: LiteLLM is running with vLLM behind it on Condenser; which models we serve today.
 :::
 
+# Tokenomics risks
+
+* Subscriptions: a flat price per seat
+* APIs: a price per token, and agents use a lot of tokens
+* A gateway gives us control, but puts everything on token pricing
+
+::: {.notes}
+Placeholder, to develop: price differences between subscription and API access to the same models; the risk that routing everything through a gateway pushes us onto token pricing. Possibly a cost-per-user chart: flat subscription line vs per-token cost rising with use.
+:::
+
 # Who manages what?
 
 {{< image-credit src="assets/generated/stacks.svg" alt="Table comparing self-hosted, Microsoft 365 Copilot and Anthropic: self-hosted means UCL runs every layer; Copilot brings 365 integration; Anthropic brings model hosting and Claude Code" width="90%" >}}
