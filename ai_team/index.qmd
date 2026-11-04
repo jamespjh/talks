@@ -14,7 +14,7 @@ subtitle: "ISD Townhall"
 Start by noting the time. Write a live audience poll from scratch, like Mentimeter or Slido, and put it live at https://research.jh.arc.ucl.ac.uk/vote
 
 - Phones open /vote and answer Yes or No to "I liked James's Talk". One vote per phone, and people can change their mind.
-- /vote/results goes on the projector: big live bars of the running totals, a small timeline underneath, and a QR code for the voting page.
+- /vote/results goes on the projector: big live bars of the running totals, a small timeline underneath, and a QR code for the voting page. My slides show it in an iframe, so it must allow that.
 - It's going on a big screen in front of a room of IT professionals, so make it striking, using UCL's brand colours and type from www.ucl.ac.uk/isd.
 - New public GitHub repo in my account, with CI that tests it and deploys it through jh-infrastructure, like my other sites.
 - Get voting and results live first. Then, only if less than 9 minutes have passed since you started, add free-text comments that pop up on the results screen.
@@ -180,7 +180,7 @@ Say out loud: what we tried with each, and how it went.
 [Vote at research.jh.arc.ucl.ac.uk/vote](https://research.jh.arc.ucl.ac.uk/vote/){.demo-url}
 
 ::: {.notes}
-Same address that was a 404 at the start. Invite everyone to vote now. If it isn't up, switch to the agent's window and show where it got to; the fallback build can be deployed in about a minute.
+Same address that was a 404 at the start. Invite everyone to vote now. If it isn't up, switch to the agent's window and show where it got to.
 :::
 
 # Questions?
