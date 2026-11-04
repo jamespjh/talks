@@ -6,6 +6,32 @@ title: "Agents, and the UCL AI team"
 subtitle: "ISD Townhall"
 ---
 
+# Live demo
+
+:::: {.columns}
+::: {.column width="56%"}
+::: {.demo-prompt}
+Start by noting the time. Write a live audience poll from scratch, like Mentimeter or Slido, and put it live at https://research.jh.arc.ucl.ac.uk/vote
+
+- Phones open /vote and answer Yes or No to "I liked James's Talk". One vote per phone, and people can change their mind.
+- /vote/results goes on the projector: big live bars of the running totals, a small timeline underneath, and a QR code for the voting page.
+- It's going on a big screen in front of a room of IT professionals, so make it striking, using UCL's brand colours and type from www.ucl.ac.uk/isd.
+- New public GitHub repo in my account, with CI that tests it and deploys it through jh-infrastructure, like my other sites.
+- Get voting and results live first. Then, only if less than 9 minutes have passed since you started, add free-text comments that pop up on the results screen.
+- I'm on stage, so don't ask me anything: make sensible choices and note them in the README.
+:::
+:::
+::: {.column width="42%"}
+<div class="demo-box demo-box-small"><iframe class="demo-frame" data-src="https://research.jh.arc.ucl.ac.uk/vote/"></iframe></div>
+
+[research.jh.arc.ucl.ac.uk/vote](https://research.jh.arc.ucl.ac.uk/vote/){.demo-url}
+:::
+::::
+
+::: {.notes}
+Start the agent now: fresh Claude Code session in jh-infrastructure, auto mode, paste the prompt. The page on the right should be a 404 — nothing exists yet.
+:::
+
 # What is an agent?
 
 {{< image-credit src="assets/generated/agent.svg" alt="Diagram of an agent: you talk to a harness, which calls a model through a gateway and model serving, and uses tools, skills and memory" width="100%" >}}
@@ -146,5 +172,15 @@ Say out loud: what we tried with each, and how it went.
 # Governance (proposed)
 
 {{< image-credit src="assets/generated/governance.svg" alt="Proposed AI governance: technology portfolios with AI leads and a use-case library hand questions to a new AI Technology Action Group; Research and Innovation, Education and PS AI groups report to a new AI Strategy Committee, which reports to UMC and works with DDTC and DSSG" width="62%" >}}
+
+# Live demo: the result
+
+<div class="demo-box demo-box-full"><iframe class="demo-frame" data-src="https://research.jh.arc.ucl.ac.uk/vote/results"></iframe></div>
+
+[Vote at research.jh.arc.ucl.ac.uk/vote](https://research.jh.arc.ucl.ac.uk/vote/){.demo-url}
+
+::: {.notes}
+Same address that was a 404 at the start. Invite everyone to vote now. If it isn't up, switch to the agent's window and show where it got to; the fallback build can be deployed in about a minute.
+:::
 
 # Questions?
