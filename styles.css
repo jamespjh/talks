@@ -182,3 +182,10 @@
 .reveal .demo-box-full { width: 920px; height: 518px; margin: 0 auto; }
 .reveal .demo-box-full iframe.demo-frame { width: 1600px; height: 900px; transform: scale(0.575); }
 .reveal .demo-url { font-size: 0.7em; }
+
+/* Brand-coloured marks that are too dark on the purple background get a light tile. */
+.reveal img.logo[src$="litellm.svg"] {
+  background: var(--ucl-white);
+  border-radius: 0.22em;
+  padding: 0.06em;
+}

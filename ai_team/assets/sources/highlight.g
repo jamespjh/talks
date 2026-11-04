@@ -1,13 +1,14 @@
 // gvpr program: light up the nodes and edges whose "role" is ARGV[0], dim the rest.
 // The harness stays bright throughout so every slide shows what the piece plugs into.
 // With no argument (or "all") the graph is passed through unchanged.
+// The hl/dim classes let ../logos.py colour inlined logos to match their node.
 // Usage: gvpr -c -a <role> -f highlight.g agent.dot | dot -Tsvg
 BEGIN { string want = (ARGC > 0) ? ARGV[0] : "all"; }
 N {
     if (want == "all") { }
-    else if ($.role == want) { fillcolor = "#a433ff"; fontcolor = "#f5f5f5"; color = "#f5f5f5"; penwidth = "4"; }
+    else if ($.role == want) { fillcolor = "#a433ff"; fontcolor = "#f5f5f5"; color = "#f5f5f5"; penwidth = "4"; class = "hl"; }
     else if ($.role == "harness") { }
-    else { fillcolor = "#5b3a78"; fontcolor = "#9c88ad"; color = "#5b3a78"; }
+    else { fillcolor = "#5b3a78"; fontcolor = "#9c88ad"; color = "#5b3a78"; class = "dim"; }
 }
 E {
     if (want == "all") { }

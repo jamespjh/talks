@@ -4,6 +4,8 @@ date: 2026-11-04
 format: revealjs
 title: "Agents, and the UCL AI team"
 subtitle: "ISD Townhall"
+resources:
+  - assets/generated/agent_ucl*.svg
 ---
 
 # Live demo
@@ -43,7 +45,7 @@ Start the agent now: fresh Claude Code session in jh-infrastructure, auto mode, 
 ::: {.piece}
 The loop: ask the model, do what it asks, feed back the result, repeat. This is the product you see.
 
-![](assets/stored/logos/claude.svg){.logo alt="Claude"} ![](assets/stored/logos/githubcopilot.svg){.logo alt="GitHub Copilot"} ![](assets/stored/logos/cursor.svg){.logo alt="Cursor"} [ChatGPT]{.badge} [M365 Copilot]{.badge} [Airia]{.badge}
+![](assets/stored/logos/claude.svg "Claude Code"){.logo alt="Claude Code"} ![](assets/stored/logos/githubcopilot.svg "GitHub Copilot"){.logo alt="GitHub Copilot"} ![](assets/stored/logos/cursor.svg "Cursor"){.logo alt="Cursor"} ![](assets/stored/logos/openai.svg "ChatGPT"){.logo alt="ChatGPT"} ![](assets/stored/logos/copilot.svg "Microsoft 365 Copilot"){.logo alt="Microsoft 365 Copilot"} ![](assets/stored/logos/airia.svg "Airia"){.logo alt="Airia"}
 :::
 
 # The model
@@ -53,7 +55,7 @@ The loop: ask the model, do what it asks, feed back the result, repeat. This is 
 ::: {.piece}
 Predicts the next piece of text. Knows its training, plus what's in front of it — nothing else.
 
-Frontier: ![](assets/stored/logos/claude.svg){.logo alt="Claude"} ![](assets/stored/logos/googlegemini.svg){.logo alt="Gemini"} [GPT]{.badge} · Open weights: ![](assets/stored/logos/meta.svg){.logo alt="Llama"} ![](assets/stored/logos/mistralai.svg){.logo alt="Mistral"} ![](assets/stored/logos/qwen.svg){.logo alt="Qwen"}
+Frontier: ![](assets/stored/logos/claude.svg "Claude"){.logo alt="Claude"} ![](assets/stored/logos/googlegemini.svg "Gemini"){.logo alt="Gemini"} ![](assets/stored/logos/openai.svg "GPT (OpenAI)"){.logo alt="GPT (OpenAI)"} · Open weights: ![](assets/stored/logos/meta.svg "Llama (Meta)"){.logo alt="Llama (Meta)"} ![](assets/stored/logos/mistralai.svg "Mistral"){.logo alt="Mistral"} ![](assets/stored/logos/qwen.svg "Qwen"){.logo alt="Qwen"}
 :::
 
 # The inference platform
@@ -63,7 +65,7 @@ Frontier: ![](assets/stored/logos/claude.svg){.logo alt="Claude"} ![](assets/sto
 ::: {.piece}
 Same model, different place: who sees the data, what it costs, which contract. Gateway = token management; serving = hosting management.
 
-Maker's own: ![](assets/stored/logos/anthropic.svg){.logo alt="Anthropic"} [OpenAI]{.badge} · Cloud: [AWS Bedrock]{.badge} [Azure]{.badge} ![](assets/stored/logos/googlecloud.svg){.logo alt="Google Cloud Vertex"} · Ours: [LiteLLM]{.badge} ![](assets/stored/logos/vllm.svg){.logo alt="vLLM"} ![](assets/stored/logos/huggingface.svg){.logo alt="Hugging Face"}
+Maker's own: ![](assets/stored/logos/anthropic.svg "Anthropic"){.logo alt="Anthropic"} ![](assets/stored/logos/openai.svg "OpenAI"){.logo alt="OpenAI"} · Cloud: ![](assets/stored/logos/bedrock.svg "Amazon Bedrock"){.logo alt="Amazon Bedrock"} ![](assets/stored/logos/azure.svg "Microsoft Azure AI"){.logo alt="Microsoft Azure AI"} ![](assets/stored/logos/googlecloud.svg "Google Cloud Vertex AI"){.logo alt="Google Cloud Vertex AI"} · Local: ![](assets/stored/logos/litellm.svg "LiteLLM"){.logo alt="LiteLLM"} ![](assets/stored/logos/vllm.svg "vLLM"){.logo alt="vLLM"} ![](assets/stored/logos/huggingface.svg "Hugging Face"){.logo alt="Hugging Face"}
 :::
 
 # Skills
@@ -71,7 +73,7 @@ Maker's own: ![](assets/stored/logos/anthropic.svg){.logo alt="Anthropic"} [Open
 {{< image-credit src="assets/generated/agent_skills.svg" alt="The agent diagram with skills highlighted" width="92%" >}}
 
 ::: {.piece}
-Packaged know-how — instructions and scripts — loaded only when the task needs them. e.g. "review an ADR", "draft a runbook".
+Packaged know-how — instructions and scripts — loaded only when the task needs them. e.g. "write an LBC", "code with Easikit".
 :::
 
 # Tools, via MCP
@@ -81,7 +83,7 @@ Packaged know-how — instructions and scripts — loaded only when the task nee
 ::: {.piece}
 Let the agent *act*: search, read, file a ticket. MCP is one standard plug, so any agent can use any system.
 
-![](assets/stored/logos/modelcontextprotocol.svg){.logo alt="Model Context Protocol"} ![](assets/stored/logos/jira.svg){.logo alt="Jira"} [ServiceNow]{.badge} [SharePoint]{.badge}
+![](assets/stored/logos/modelcontextprotocol.svg "Model Context Protocol"){.logo alt="Model Context Protocol"} ![](assets/stored/logos/jira.svg "Jira"){.logo alt="Jira"} ![](assets/stored/logos/servicenow.svg "ServiceNow"){.logo alt="ServiceNow"} ![](assets/stored/logos/sharepoint.svg "SharePoint"){.logo alt="SharePoint"}
 :::
 
 # Memory
@@ -94,7 +96,7 @@ The model forgets everything between calls; the harness keeps notes. Yesterday a
 
 # At UCL
 
-{{< image-credit src="assets/generated/agent_ucl.svg" alt="The agent diagram filled in with UCL pieces: the Foundry, a LiteLLM gateway, vLLM on Condenser GPUs, commercial models, and MCP servers for Jira, MyServices and UCL policies" width="100%" >}}
+<object class="diagram" type="image/svg+xml" data="assets/generated/agent_ucl.svg" aria-label="The agent diagram filled in with UCL pieces: staff and students use the AI@UCL Foundry (Airia) and the Claude apps directly; the Foundry reaches models through a LiteLLM gateway (to vLLM on Condenser GPUs, or commercial models) or straight to commercial models; the Claude apps go straight to commercial models; both use MCP servers for Jira, MyServices and UCL policies" style="width:100%; height:520px"></object>
 
 # The AI team roadmap
 
@@ -102,7 +104,7 @@ The model forgets everything between calls; the harness keeps notes. Yesterday a
 
 # Managing shadow AI
 
-{{< image-credit src="assets/generated/agent_ucl_harness.svg" alt="The UCL agent diagram with the Foundry highlighted" width="92%" >}}
+<object class="diagram" type="image/svg+xml" data="assets/generated/agent_ucl_harness.svg" aria-label="The UCL agent diagram with the Foundry highlighted" style="width:100%; height:420px"></object>
 
 ::: {.piece}
 Staff already use consumer AI with UCL data; a trusted alternative beats a ban. Agreements with key providers, and the AI@UCL Foundry.
@@ -112,18 +114,6 @@ Staff already use consumer AI with UCL data; a trusted alternative beats a ban. 
 Say out loud: which provider agreements are signed or in negotiation. Not on the slide.
 :::
 
-# Local GPUs + commercial models
-
-{{< image-credit src="assets/generated/gateway.svg" alt="Apps and agents go through a LiteLLM gateway, which routes to vLLM on Condenser GPUs or to commercial providers" width="100%" >}}
-
-::: {.piece}
-Tokenomics: fixed-cost local capacity for the bulk, pay-per-token for the hard stuff.
-:::
-
-::: {.notes}
-Say out loud: LiteLLM is running with vLLM behind it on Condenser; which models we serve today.
-:::
-
 # Tokenomics risks
 
 * Subscriptions: a flat price per seat
@@ -131,14 +121,12 @@ Say out loud: LiteLLM is running with vLLM behind it on Condenser; which models 
 * A gateway gives us control, but puts everything on token pricing
 
 ::: {.notes}
+Say out loud: LiteLLM is running with vLLM behind it on Condenser; which models we serve today.
+
 Placeholder, to develop: price differences between subscription and API access to the same models; the risk that routing everything through a gateway pushes us onto token pricing. Possibly a cost-per-user chart: flat subscription line vs per-token cost rising with use.
 :::
 
-# Who manages what?
-
-{{< image-credit src="assets/generated/stacks.svg" alt="Table comparing self-hosted, Microsoft 365 Copilot and Anthropic: self-hosted means UCL runs every layer; Copilot brings 365 integration; Anthropic brings model hosting and Claude Code" width="90%" >}}
-
-# We need both
+# Mixed supply strategy
 
 :::: {.two-col}
 ::: {}
@@ -159,7 +147,7 @@ Placeholder, to develop: price differences between subscription and API access t
 
 # MCP and RAG for UCL
 
-{{< image-credit src="assets/generated/agent_ucl_tools.svg" alt="The UCL agent diagram with MCP servers for Jira, MyServices and UCL policies highlighted" width="92%" >}}
+<object class="diagram" type="image/svg+xml" data="assets/generated/agent_ucl_tools.svg" aria-label="The UCL agent diagram with MCP servers for Jira, MyServices and UCL policies highlighted" style="width:100%; height:420px"></object>
 
 ::: {.piece}
 Early tests with Jira, MyServices and UCL policies (via RAG). Next: a managed MCP registry and knowledge service.
@@ -169,9 +157,9 @@ Early tests with Jira, MyServices and UCL policies (via RAG). Next: a managed MC
 Say out loud: what we tried with each, and how it went.
 :::
 
-# Governance (proposed)
+# Governance
 
-{{< image-credit src="assets/generated/governance.svg" alt="Proposed AI governance: technology portfolios with AI leads and a use-case library hand questions to a new AI Technology Action Group; Research and Innovation, Education and PS AI groups report to a new AI Strategy Committee, which reports to UMC and works with DDTC and DSSG" width="62%" >}}
+{{< image-credit src="assets/generated/governance.svg" alt="Approved AI governance: technology portfolios hand questions to a new AI Technology Action Group, which reports to a new AI Strategy Committee; so do the Research and Innovation, Education and PS AI groups; the Committee reports to UMC and works with DDTC and DSSG" width="62%" >}}
 
 # Live demo: the result
 

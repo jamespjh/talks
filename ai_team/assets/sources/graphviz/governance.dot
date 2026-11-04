@@ -1,4 +1,4 @@
-// Proposed AI governance structure.
+// Approved AI governance structure.
 // White = new body, purple = existing body (as in the original slide's key).
 digraph governance {
     graph [bgcolor="#3c1657", rankdir="BT", nodesep="0.35", ranksep="0.55", pad="0.2",
@@ -22,8 +22,6 @@ digraph governance {
     ri   [label="Research &\nInnovation AI group"];
     ps   [label="PS AI group"];
     atag [group="spine", label=<<B>AI Technology Action Group</B><BR/><FONT POINT-SIZE="13">technology, service &amp; pilot roadmaps · joined-up AI services</FONT>>];
-    leads   [label="8 × AI leads", fontsize="15"];
-    library [label="Use-case library", fontsize="15"];
 
     // area groups sit side by side
     subgraph cluster_areas {
@@ -34,12 +32,9 @@ digraph governance {
         ri -> edu -> ps [style="invis"];
     }
 
-    // portfolio contents
-    leads -> portfolios [arrowhead="none", style="dotted"];
-    library -> portfolios [arrowhead="none", style="dotted"];
-
     portfolios -> atag [label="  “how to” / “should we”\n  questions"];
     atag -> edu [style="invis"];
+    atag -> strategy;
     edu -> strategy [label="  share roadmaps,\n  escalate high risk"];
     ri -> strategy; ps -> strategy;
     strategy -> umc [label="  reports progress against\n  DSP & strategic ambition"];
@@ -47,7 +42,6 @@ digraph governance {
     strategy -> dssg;
 
     { rank="same"; ddtc; strategy; dssg; }
-    { rank="same"; leads; library; }
 
     // key, beside the portfolios
     key [shape="plaintext", style="", label=<

@@ -17,7 +17,8 @@ digraph agent {
     serving  [role="platform", label="Model serving\n(hosting on GPUs)"];
     model    [role="model",    label="Model\n(LLM)"];
     tools    [role="tools",    label="Tools\n(via MCP)"];
-    systems  [role="tools",    label="Systems & data", shape="cylinder"];
+    knowledge [role="tools",   label="Knowledge\n(documents, data)", shape="cylinder"];
+    actions  [role="tools",    label="Actions\n(via APIs)", shape="cds", margin="0.3,0.15"];
     skills   [role="skills",   label="Skills"];
     memory   [role="memory",   label="Memory", shape="cylinder"];
 
@@ -26,10 +27,11 @@ digraph agent {
     gateway  -> serving  [role="platform", dir="both"];
     serving  -> model    [role="model",    dir="both"];
     harness  -> tools    [role="tools",    dir="both", label="call / result"];
-    tools    -> systems  [role="tools",    dir="both"];
+    tools    -> knowledge [role="tools",   label="read"];
+    tools    -> actions  [role="tools",    label="act"];
     harness  -> skills   [role="skills",   label="load when relevant"];
     harness  -> memory   [role="memory",   dir="both", label="recall / record"];
 
     { rank="same"; gateway; tools; }
-    { rank="same"; serving; systems; }
+    { rank="same"; serving; knowledge; actions; }
 }
