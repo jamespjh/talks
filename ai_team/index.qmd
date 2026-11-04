@@ -165,7 +165,7 @@ Say out loud: what we tried with each, and how it went.
 
 <div class="demo-box demo-box-full"><iframe class="demo-frame" data-src="https://research.jh.arc.ucl.ac.uk/vote/results"></iframe></div>
 
-[Vote at research.jh.arc.ucl.ac.uk/vote](https://research.jh.arc.ucl.ac.uk/vote/){.demo-url}
+[research.jh.arc.ucl.ac.uk/vote/results](https://research.jh.arc.ucl.ac.uk/vote/results){.demo-url}
 
 ::: {.notes}
 Same address that was a 404 at the start. Invite everyone to vote now. If it isn't up, switch to the agent's window and show where it got to.
