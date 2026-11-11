@@ -1,0 +1,14 @@
+group,model,score
+Closed frontier,Claude Fable 5.2,65
+Closed frontier,Gemini 4 Carbon,60
+Closed frontier,GPT-6 Astra,57
+Chinese open weights,Kimi K3.1 Pro,46
+Chinese open weights,DeepSeek V4.1 Flash,33
+Chinese open weights,GLM-5.3,32
+Chinese open weights,Qwen3.8 27B,20
+European open weights,Mistral Large 4,26
+European open weights,Apertus 1.5,
+European open weights,EuroLLM 22B,
+US open weights,Reflection Beam 1.0,18
+US open weights,NVIDIA Nemotron 3.5 Super,14
+US open weights,Marin,

@@ -1,0 +1,25 @@
+// Why values alignment is about speed: two roads from the same starting point.
+digraph values {
+    graph [bgcolor="#3c1657", rankdir="LR", nodesep="0.5", ranksep="0.35", pad="0.3"];
+    node  [shape="box", style="filled,rounded", fillcolor="#f5f5f5", fontcolor="#3c1657",
+           color="#a433ff", penwidth="2", fontname="Helvetica", fontsize="24", margin="0.2,0.12"];
+    edge  [color="#a433ff", penwidth="2.5", arrowsize="0.9"];
+
+    start [label="AI for\nresearch", shape="ellipse", fontsize="26"];
+
+    node [fillcolor="#a433ff", fontcolor="#f5f5f5", color="#f5f5f5"];
+    fair [label="FAIR, open,\nauditable models"];
+    aligned [label="Values-aligned\nAI"];
+    consent [label="Community\nconsent"];
+    fast [label="Fast\nadaptation", fontsize="28", penwidth="3"];
+
+    node [fillcolor="#3c1657", fontcolor="#c9b8d9", color="#9c88ad", style="rounded,dashed"];
+    closed [label="Opaque,\nunaccountable AI"];
+    distrust [label="Distrust"];
+    opposition [label="Opposition"];
+    slow [label="Left\nbehind", fontsize="28"];
+
+    start -> fair -> aligned -> consent -> fast;
+    start -> closed [color="#9c88ad"];
+    closed -> distrust -> opposition -> slow [color="#9c88ad", style="dashed"];
+}

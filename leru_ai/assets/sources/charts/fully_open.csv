@@ -1,0 +1,7 @@
+model,group,MMLU-Pro,Global-MMLU
+Apertus 1.5 70B,European fully open,43.8,59.3
+EuroLLM 22B,European fully open,36.8,54.9
+OLMo 3 32B,US fully open,48.0,49.1
+Marin 32B,US fully open,45.3,54.2
+Nemotron 3.5 30B-A3B,US open weights,67.2,69.4
+Qwen3.5 27B,Chinese open weights,78.0,78.6

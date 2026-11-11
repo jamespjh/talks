@@ -1,0 +1,18 @@
+// Code becomes evidence only through the practices of RSE (Shingleton, Hetherington & Basiri, preprint).
+digraph warrant {
+    graph [bgcolor="#3c1657", rankdir="TB", nodesep="0.9", ranksep="0.7", pad="0.3"];
+    node  [shape="box", style="filled,rounded", fillcolor="#f5f5f5", fontcolor="#3c1657",
+           color="#a433ff", penwidth="2", fontname="Helvetica", fontsize="30", margin="0.3,0.2"];
+    edge  [color="#a433ff", penwidth="2.5", arrowsize="0.9", fontname="Helvetica",
+           fontcolor="#f5f5f5", fontsize="24"];
+
+    code [label="Code\n(human or AI-written)"];
+    practices [label="Tests · review ·\ndomain expertise ·\nprovenance", fillcolor="#a433ff", fontcolor="#f5f5f5", color="#f5f5f5", penwidth="3"];
+    claim [label="\"Software S\ndemonstrates P\"", fontsize="32"];
+    barn [label="A fake barn", fillcolor="#3c1657", fontcolor="#f5f5f5", color="#9c88ad", style="rounded,dashed"];
+
+    code -> practices [label="RSE"];
+    practices -> claim [label="warranted"];
+    code -> barn [label="\"it runs\"", style="dashed", color="#9c88ad", fontcolor="#9c88ad"];
+    { rank="same"; practices; barn; }
+}

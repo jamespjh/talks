@@ -189,3 +189,14 @@
   border-radius: 0.22em;
   padding: 0.06em;
 }
+
+/* An axis line under the three columns of the openness spectrum slide. */
+.reveal .spectrum-axis {
+  display: block;
+  margin-top: 1.2em;
+  padding-top: 0.4em;
+  border-top: 3px solid var(--ucl-light-purple);
+  font-size: 0.6em;
+  text-align: center;
+  opacity: 0.9;
+}
