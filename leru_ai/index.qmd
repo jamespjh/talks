@@ -3,7 +3,7 @@ author: "James Hetherington"
 date: 2026-11-12
 format: revealjs
 title: "Research AI Engineering"
-subtitle: "LERU meeting, UCL East"
+subtitle: "LERU Digital Education policy group programme meeting"
 ---
 
 # European AI-assisted discovery: the role of research engineers
