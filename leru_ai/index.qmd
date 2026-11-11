@@ -59,7 +59,7 @@ This is the machinery a university uses to put new digital methods into the hand
 {{< image-credit src="assets/stored/dilemma.png" alt="Cartoon: an AI train leaves a European university's station; some academics run to board, others hold placards asking about copyright, energy and values" width="70%" credit="Generated with ChatGPT image generation, OpenAI (November 2026)" >}}
 
 ::: {.notes}
-We can't be left behind. AI capability is becoming a determinant of research excellence and competitiveness.
+We can't be left behind. AI capability is becoming a determinant of research excellence and competitiveness. And our researchers aren't waiting for us: in Wiley's survey of about 2,400 researchers last year, 84% already used AI, up from 57% the year before, but only 41% felt their institution supported them adequately. The train is leaving with or without the institution.
 
 But many in our communities are sceptical, and not without reason: copyright and provenance, energy and environment, labour, and whose values are built into these systems.
 
@@ -137,7 +137,7 @@ Part of that gap is a deliberate choice: Apertus trains only on data whose owner
 
 And the dashed line is the closed frontier: Gemini, Claude and GPT score 90 to 93 on MMLU-Pro. That's not quite like-for-like, since they're finished, post-trained products and the bars are base models, but post-training doesn't close a gap that size. Epoch AI estimate the best open models have trailed the frontier by about four months on average this year.
 
-So we need both: frontier models for capability now, and open, especially European, models for provenance, sovereignty and trust. And Europe needs to invest to close the gap: the EUROPA consortium's 400-billion-parameter open model, OpenEuroLLM's first models due next month, and the AI Gigafactories.
+So the honest position: closed and open-weights models for the hard work now, and fully open, especially European, models as the investment we're making, for provenance, sovereignty and trust. And Europe needs to invest to close the gap: the EUROPA consortium's 400-billion-parameter open model, OpenEuroLLM's first models due next month, and the AI Gigafactories.
 
 And running FAIR models where we can see them means our own compute: universities need to host them locally, not just rent access.
 :::
@@ -259,5 +259,6 @@ Thank you.
 - Shingleton, Hetherington & Basiri (2026). *Assertion Errors: Why AI-Generated Research Code Still Needs Epistemic Infrastructure*. Preprint, under review at CACM. [SSRN 7185258](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7185258)
 - Goldman (1976). Discrimination and perceptual knowledge. *J. Philosophy* 73, 771. [doi:10.2307/2025679](https://doi.org/10.2307/2025679)
 - Apertus v1.5 technical report (2026). [arXiv:2610.15542](https://arxiv.org/abs/2610.15542)
+- Wiley (2025). *AI Adoption Jumps to 84% Among Researchers as Expectations Undergo Significant 'Reality Check'* (ExplanAItions study, 2,430 researchers, August 2025). [newsroom.wiley.com](https://newsroom.wiley.com/press-releases/press-release-details/2025/AI-Adoption-Jumps-to-84-Among-Researchers-as-Expectations-Undergo-Significant-Reality-Check/), 7 October 2025
 - Kaggle (2026). [MMLU-Pro leaderboard](https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro), captured 23 October 2026
 - Epoch AI (2026). [Open and closed model gap](https://epoch.ai/data-insights/open-closed-eci-gap)
