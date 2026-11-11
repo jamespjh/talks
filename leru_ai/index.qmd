@@ -54,8 +54,7 @@ This is the machinery a university uses to put new digital methods into the hand
 
 # Europe's dilemma
 
-<!-- Placeholder: generate from assets/stored/README.md, then add credit="Generated with ..., accessed via ChatGPT (November 2026)" and credit-url -->
-{{< image-credit src="assets/stored/dilemma.png" alt="Cartoon: an AI train leaves a European university's station; some academics run to board, others hold placards asking about copyright, energy and values" width="70%" >}}
+{{< image-credit src="assets/stored/dilemma.png" alt="Cartoon: an AI train leaves a European university's station; some academics run to board, others hold placards asking about copyright, energy and values" width="70%" credit="Generated with ChatGPT image generation, OpenAI (November 2026)" >}}
 
 ::: {.notes}
 We can't be left behind. AI capability is becoming a determinant of research excellence and competitiveness.
@@ -69,8 +68,7 @@ Hold on to this tension: I'll come back to why it decides how fast we can move.
 
 # Fake barns
 
-<!-- Placeholder: generate from assets/stored/README.md, then add credit and credit-url -->
-{{< image-credit src="assets/stored/fake_barns.png" alt="Cartoon: countryside full of barns that are painted facades propped up by stacks of printed code, with one real barn, and a researcher inspecting with a magnifying glass" width="70%" >}}
+{{< image-credit src="assets/stored/fake_barns.png" alt="Cartoon: countryside full of barns that are painted facades propped up by stacks of printed code, with one real barn, and a researcher inspecting with a magnifying glass" width="70%" credit="Generated with ChatGPT image generation, OpenAI (November 2026)" >}}
 
 ::: {.notes}
 Alvin Goldman's thought experiment: a county full of fake barns, with one real one. A visitor points at the real barn and says "that's a barn". It's true, and justified by what they see, but it isn't knowledge: in that county they could just as easily have been fooled.
@@ -114,8 +112,7 @@ The policy also says where AI helps: boilerplate input and output, yes; scientif
 
 # Two futures
 
-<!-- Placeholder: generate from assets/stored/README.md, then add credit and credit-url -->
-{{< image-credit src="assets/stored/two_futures.png" alt="Split cartoon: on the left a postdoc's tower of published papers stands on crumbling code while the RSE office is closed; on the right the postdoc and an RSE check an AI robot's work against green tests" width="80%" >}}
+{{< image-credit src="assets/stored/two_futures.png" alt="Split cartoon: on the left a postdoc's tower of published papers stands on crumbling code while the RSE office is closed; on the right the postdoc and an RSE check an AI robot's work against green tests" width="80%" credit="Generated with ChatGPT image generation, OpenAI (November 2026)" >}}
 
 ::: {.notes}
 Two futures for research software engineering.

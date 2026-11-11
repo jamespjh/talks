@@ -1,8 +1,9 @@
 # Stored images and image prompts
 
-`dilemma.png`, `fake_barns.png` and `two_futures.png` are placeholders. Generate each image in
-ChatGPT, save it over the placeholder with the same name, and put the share link in the
-`credit-url` of its `image-credit` shortcode in `../../index.qmd`.
+`dilemma.png`, `fake_barns.png` and `two_futures.png` were generated in ChatGPT (November 2026)
+from the prompts below and are credited on their slides. To regenerate one, save it over the
+file with the same name; a share link can go in the `credit-url` of its `image-credit`
+shortcode in `../../index.qmd`.
 
 The style matches the inaugural lecture's `epistemologies.png`: a richly detailed, warm,
 digitally painted editorial cartoon. Start each prompt with:
@@ -41,3 +42,9 @@ Right panel, "Engineered": the same postdoc works beside a research software eng
 bright, orderly workbench. A friendly AI robot hands them components; the engineer checks
 each one with a precision gauge against a wall dashboard of green ticks. A smaller, solid
 stack of papers sits on a firm stone foundation.
+
+## Logos
+
+The logos in `logos/` are recoloured `#f5f5f5`. `anthropic`, `openai`, `googlegemini`,
+`mistralai`, `qwen` and `meta` are copied from `ai_team`; `deepseek` and `nvidia` are from
+Simple Icons 16.30.0, and `ai2` from LobeHub icons 1.102.0.
