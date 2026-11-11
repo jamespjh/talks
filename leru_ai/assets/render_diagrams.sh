@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Render the .dot files in sources/graphviz and the charts in sources/charts to SVG in generated/.
+# Render the .dot files in sources/graphviz and the chart in sources/charts to SVG in generated/.
 # Usage: ./render_diagrams.sh
 
 set -uo pipefail
@@ -20,9 +20,9 @@ for dotfile in "$SOURCE_DIR"/*.dot; do
 done
 
 if python3 "$SCRIPT_DIR/sources/charts/charts.py" "$OUTPUT_DIR"; then
-    echo "✓ leaderboard.svg, fully_open.svg"
+    echo "✓ fully_open.svg"
 else
-    echo "✗ Failed to draw the charts"; status=1
+    echo "✗ Failed to draw the chart"; status=1
 fi
 
 exit $status

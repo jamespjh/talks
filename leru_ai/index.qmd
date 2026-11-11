@@ -3,10 +3,10 @@ author: "James Hetherington"
 date: 2026-11-12
 format: revealjs
 title: "Research AI Engineering"
-subtitle: "LERU meeting on AI, UCL"
+subtitle: "LERU meeting, UCL East"
 ---
 
-# From learning with AI to discovering with AI
+# European AI-assisted discovery: the role of research engineers
 
 ::: {.notes}
 Thank Kathryn Woods. She has talked about AI in education; I'll follow up on research, and in particular on the people and institutions that make computational research trustworthy, and what has to change for AI.
@@ -14,7 +14,7 @@ Thank Kathryn Woods. She has talked about AI in education; I'll follow up on res
 Twenty minutes, then questions.
 :::
 
-# The research engineer
+# The craftsperson and the scholar
 
 :::: {.two-col}
 ::: {}
@@ -28,9 +28,11 @@ width="100%" >}}
 ::: {}
 **UCL ARC**
 
-~120 people
-
-~60 research software engineers
+- Research Software Engineers
+- Data Scientists
+- Data Stewards
+- Research Infrastructure Engineers
+- Research Managers
 :::
 ::::
 
@@ -42,9 +44,9 @@ At UCL, ARC and its predecessor started with three people. ARC is now about 120 
 The point: universities have absorbed a digital transformation of research before, and groups like ARC are how we did it.
 :::
 
-# What ARC-like groups do
+# What digital research technology platforms do
 
-{{< image-credit src="assets/generated/arc.svg" alt="Four activities that feed each other: compute and data platforms; research software engineering and consulting; R&D in digital research methods; digital research education" width="80%" >}}
+{{< image-credit src="assets/generated/arc.svg" alt="Four activities that feed each other: compute and data platforms; research software engineering and consulting; R&D in digital research methods; digital research education" width="95%" >}}
 
 ::: {.notes}
 Platforms, engineering, research into methods, and education, each feeding the others. Professional staff with an academic mission.
@@ -63,65 +65,7 @@ But many in our communities are sceptical, and not without reason: copyright and
 
 In ARC we wrote a policy for AI-assisted software development that starts from both facts: AI may help, and it is here for years to come; used unwisely, it risks the epistemic grounding of research; and colleagues with reservations must be respected alongside enthusiastic adopters. We tried to disagree well.
 
-Hold on to this tension: I'll come back to why it decides how fast we can move.
-:::
-
-# Fake barns
-
-{{< image-credit src="assets/stored/fake_barns.png" alt="Cartoon: countryside full of barns that are painted facades propped up by stacks of printed code, with one real barn, and a researcher inspecting with a magnifying glass" width="70%" credit="Generated with ChatGPT image generation, OpenAI (November 2026)" >}}
-
-::: {.notes}
-Alvin Goldman's thought experiment: a county full of fake barns, with one real one. A visitor points at the real barn and says "that's a barn". It's true, and justified by what they see, but it isn't knowledge: in that county they could just as easily have been fooled.
-
-Computational research is very good at building fake barns: results that look and feel genuine, but rest on hidden bugs, wrong assumptions or irreproducible runs. Generative AI makes the facades more convincing: polished, plausible code, at scale.
-:::
-
-# Running code isn’t knowledge
-
-{{< image-credit src="assets/generated/warrant.svg" alt="Code, whether human or AI-written, becomes a warranted claim, Software S demonstrates P, only through tests, review, domain expertise and provenance; code that merely runs leads to a fake barn" width="52%" >}}
-
-::: {.piece}
-Shingleton, Hetherington & Basiri, *Assertion Errors: Why AI-Generated Research Code Still Needs Epistemic Infrastructure*, preprint under review at CACM
-:::
-
-::: {.notes}
-With colleagues at Glasgow we argue that research software engineering is part of the epistemic infrastructure of computational science: the practices, norms and social arrangements through which software-mediated claims become warranted.
-
-The usual defence of vibe-coding: we already rely on NumPy without reading it. True, but we trust NumPy because of the community practices behind it: its tests, review history and bug tracker. AI output earns trust the same way, or not at all.
-
-So AI doesn't make RSE less important. As the supply of plausible code goes up, the work of telling real barns from fake ones becomes more important.
-:::
-
-# Comprehension debt
-
-> A codebase partly written by a machine that no one fully understands, so no one can change it safely.
-
-**Inherited** comprehension debt: the AI-designed project that arrives at your door.
-
-::: {.piece}
-UCL ARC, *AI-Assisted Software Development Policy* (2026), [doi:10.5522/04/34070631](https://doi.org/10.5522/04/34070631)
-:::
-
-::: {.notes}
-A term from our ARC policy, by analogy with technical debt. Our engineers must be able to make unassisted changes to code they're responsible for. Code quality, not just behaviour, stays the standard: we oppose "code is throwaway" for research.
-
-And inherited comprehension debt: collaborators now arrive with projects designed with an AI. Our staff review them, and can decline work where the debt can't be controlled.
-
-The policy also says where AI helps: boilerplate input and output, yes; scientific kernels, prefer hand-written.
-:::
-
-# Two futures
-
-{{< image-credit src="assets/stored/two_futures.png" alt="Split cartoon: on the left a postdoc's tower of published papers stands on crumbling code while the RSE office is closed; on the right the postdoc and an RSE check an AI robot's work against green tests" width="80%" credit="Generated with ChatGPT image generation, OpenAI (November 2026)" >}}
-
-::: {.notes}
-Two futures for research software engineering.
-
-In one, RSE becomes irrelevant: why hire an engineer when a postdoc can generate the code in an afternoon? And we get a generation of vibe-coded papers, standing on code nobody understands. Bad science, at scale.
-
-In the other, RSE becomes the epistemic infrastructure for AI-assisted science: the people who make AI-written code trustworthy, and who teach researchers to do the same.
-
-Which one we get depends on whether RSE communities adapt now. Our policy expects every engineer to get hands-on with these tools: to keep claiming to be experts, we have to be expert in this too.
+That tension decides how fast we can move.
 :::
 
 # Values alignment is speed
@@ -129,11 +73,11 @@ Which one we get depends on whether RSE communities adapt now. Our policy expect
 {{< image-credit src="assets/generated/values.svg" alt="Two roads from AI for research: FAIR, open, auditable models lead to values-aligned AI, community consent and fast adaptation; opaque, unaccountable AI leads to distrust, opposition and being left behind" width="100%" >}}
 
 ::: {.notes}
-Back to the dilemma. Why do values matter for a leader who just wants their institution not to be left behind?
+So why do values matter for a leader who just wants their institution not to be left behind?
 
 Because the weight of opposition in our own communities will slow adaptation. If the AI we offer is opaque and unaccountable, the sceptics are right to resist, and they will.
 
-ARC-like groups already have the answer in our own values: FAIR, findable, accessible, interoperable, reusable. Applied to AI, FAIR points to open-source and open-weights models, run where we can see them, with AI use attributable and auditable. Our ARC policy prefers these where capability allows.
+Digital research technology platforms already have the answer in our own values: FAIR, findable, accessible, interoperable, reusable. Applied to AI, FAIR points to open-source and open-weights models, run where we can see them, with AI use attributable and auditable. Our ARC policy prefers these where capability allows.
 
 Values-aligned AI is not a brake. It's what wins the consent that lets us move fast.
 :::
@@ -180,25 +124,9 @@ Open weights: download and run on your own hardware, which matters for sovereign
 Fully open: weights, training data, code and recipes all published. Apertus from the Swiss AI Initiative, ETH, EPFL and CSCS; EuroLLM; and from the US, Ai2's OLMo and Marin from the Open Athena lab. This is FAIR for AI.
 :::
 
-# The gap
-
-{{< image-credit src="assets/generated/leaderboard.svg" alt="Bar chart of the Artificial Analysis Intelligence Index: closed frontier models 57 to 65; Chinese open-weights models 20 to 46; Mistral Large 4 26; US open-weights models 14 to 18; Apertus, EuroLLM and Marin not independently scored" width="90%" >}}
-
-::: {.notes}
-Honesty about capability. On the Artificial Analysis Intelligence Index, as of yesterday:
-
-- Closed frontier: the best is 65.
-- The best open-weights model is Chinese: Kimi K3.1 Pro at 46. The whole top of the open leaderboard is Chinese.
-- Europe's best is Mistral Large 4 at 26, the best open model from outside China, released last month.
-- US open models: Reflection's Beam at 18, NVIDIA's Nemotron at 14.
-- The fully open models, Apertus, EuroLLM and Marin, aren't on the index at all.
-
-Epoch AI estimate that, since January 2026, the best open-weights models have trailed the closed frontier by about four months on average.
-:::
-
 # Fully open, but behind
 
-{{< image-credit src="assets/generated/fully_open.svg" alt="Bar chart of MMLU-Pro and Global-MMLU for base models: Apertus 1.5 70B 43.8 and 59.3; EuroLLM 22B 36.8 and 54.9; OLMo 3 32B 48.0 and 49.1; Marin 32B 45.3 and 54.2; Nemotron 3.5 67.2 and 69.4; Qwen3.5 27B 78.0 and 78.6" width="90%" >}}
+{{< image-credit src="assets/generated/fully_open.svg" alt="Bar chart of MMLU-Pro and Global-MMLU for base models: Apertus 1.5 70B 43.8 and 59.3; EuroLLM 22B 36.8 and 54.9; OLMo 3 32B 48.0 and 49.1; Marin 32B 45.3 and 54.2; Nemotron 3.5 67.2 and 69.4; Qwen3.5 27B 78.0 and 78.6; a dashed line above them all marks the closed frontier models, post-trained, at 90 to 93 on MMLU-Pro" width="90%" >}}
 
 ::: {.notes}
 Among the fully open models, Europe holds its own: Apertus has the best multilingual score of any fully open model, ahead of the US's OLMo and Marin.
@@ -207,23 +135,67 @@ But the fully open models as a group trail the open-weights ones by a long way: 
 
 Part of that gap is a deliberate choice: Apertus trains only on data whose owners allow it, and limits memorisation. That's the price of values alignment, and worth paying.
 
+And the dashed line is the closed frontier: Gemini, Claude and GPT score 90 to 93 on MMLU-Pro. That's not quite like-for-like, since they're finished, post-trained products and the bars are base models, but post-training doesn't close a gap that size. Epoch AI estimate the best open models have trailed the frontier by about four months on average this year.
+
 So we need both: frontier models for capability now, and open, especially European, models for provenance, sovereignty and trust. And Europe needs to invest to close the gap: the EUROPA consortium's 400-billion-parameter open model, OpenEuroLLM's first models due next month, and the AI Gigafactories.
 :::
 
-# Faculty AI Changemaker Teams
+# Fake barns
 
-{{< image-credit src="assets/generated/fact.svg" alt="Hub and spoke: UCL ARC at the centre, providing platforms, community of practice, deep expertise and cost recovery; Mathematical and Physical Sciences as the pathfinder, recruiting now; Life Sciences next; further faculties to follow" width="85%" >}}
+{{< image-credit src="assets/stored/fake_barns.png" alt="Cartoon: countryside full of barns that are painted facades propped up by stacks of printed code, with one real barn, and a researcher inspecting with a magnifying glass" width="70%" credit="Generated with ChatGPT image generation, OpenAI (November 2026)" >}}
 
 ::: {.notes}
-What we're doing at UCL. Credit Tim Scanlon, who leads it.
+That's the institutional choice. Now to what AI does to the knowledge we produce.
 
-Research AI Engineers embedded in faculties, close to the research, but coordinated through ARC for platforms, community, depth and cost recovery: the model that grew ARC.
+Alvin Goldman's thought experiment: a county full of fake barns, with one real one. A visitor points at the real barn and says "that's a barn". It's true, and justified by what they see, but it isn't knowledge: in that county they could just as easily have been fooled.
 
-They give hands-on help, training, compute and seed projects, and co-supervise students. They're open-ended ARC posts, not short-term project roles: a career.
+Computational research is very good at building fake barns: results that look and feel genuine, but rest on hidden bugs, wrong assumptions or irreproducible runs. Generative AI makes the facades more convincing: polished, plausible code, at scale.
+:::
 
-Mathematical and Physical Sciences is the pathfinder, recruiting now; Life Sciences next; then further faculties as the evidence comes in.
+# Running code isn’t knowledge
 
-In UCL's AI strategy consultation this was the most strongly supported initiative. One colleague called it "a no brainer".
+{{< image-credit src="assets/generated/warrant.svg" alt="Code, whether human or AI-written, becomes a warranted claim, Software S demonstrates P, only through tests, review, domain expertise and provenance; code that merely runs leads to a fake barn" width="52%" >}}
+
+::: {.piece}
+Shingleton, Hetherington & Basiri, *Assertion Errors: Why AI-Generated Research Code Still Needs Epistemic Infrastructure*, preprint under review at CACM
+:::
+
+::: {.notes}
+With colleagues at Glasgow we argue that research software engineering is part of the epistemic infrastructure of computational science: the practices, norms and social arrangements through which software-mediated claims become warranted.
+
+The usual defence of vibe-coding: we already rely on NumPy without reading it. True, but we trust NumPy because of the community practices behind it: its tests, review history and bug tracker. AI output earns trust the same way, or not at all.
+
+So AI doesn't make RSE less important. As the supply of plausible code goes up, the work of telling real barns from fake ones becomes more important.
+:::
+
+# Cognitive debt
+
+> A codebase partly written by a machine that no one fully understands, so that the research conclusions drawn from it are epistemically unsafe
+
+::: {.piece}
+After Storey (2026), [*How Generative and Agentic AI Shift Concern from Technical Debt to Cognitive Debt*](https://margaretstorey.com/blog/2026/02/09/cognitive-debt/); Kosmyna et al. (2025), [*Your Brain on ChatGPT*](https://www.media.mit.edu/publications/your-brain-on-chatgpt/)
+:::
+
+::: {.notes}
+By analogy with technical debt: technical debt lives in the code; cognitive debt lives in our heads. Margaret-Anne Storey describes it as the team losing its shared theory of the system when AI lets it go fast. The MIT Media Lab's EEG study found people accumulating cognitive debt when they wrote with an AI assistant. Our ARC policy calls the same thing comprehension debt.
+
+For research, the cost isn't only that no one can change the code safely: it's that no one can stand behind the conclusions. So our engineers must be able to make unassisted changes to code they're responsible for, and code quality, not just behaviour, stays the standard: we oppose "code is throwaway" for research.
+
+And inherited debt: collaborators now arrive with projects designed with an AI. Our staff review them, and can decline work where the debt can't be controlled.
+:::
+
+# Two futures
+
+{{< image-credit src="assets/stored/two_futures.png" alt="Split cartoon: on the left a postdoc's tower of published papers stands on crumbling code while the RSE office is closed; on the right the postdoc and an RSE check an AI robot's work against green tests" width="80%" credit="Generated with ChatGPT image generation, OpenAI (November 2026)" >}}
+
+::: {.notes}
+Two futures for research software engineering.
+
+In one, RSE becomes irrelevant: why hire an engineer when a postdoc can generate the code in an afternoon? And we get a generation of vibe-coded papers, standing on code nobody understands. Bad science, at scale.
+
+In the other, RSE becomes the epistemic infrastructure for AI-assisted science: the people who make AI-written code trustworthy, and who teach researchers to do the same.
+
+Which one we get depends on whether RSE communities adapt now. Our policy expects every engineer to get hands-on with these tools: to keep claiming to be experts, we have to be expert in this too.
 :::
 
 # Research AI Engineers {.center}
@@ -238,18 +210,37 @@ Not prompt engineers. People who build the epistemic infrastructure for AI-enabl
 RSE became a profession because a community named it, built careers for it and found the money for it. We need to do the same, faster.
 :::
 
-# The call
+# Faculty AI Changemaker Teams
+
+{{< image-credit src="assets/generated/fact.svg" alt="Hub and spoke: UCL ARC at the centre, providing research technology platforms, a community of practice and professional development; Mathematical and Physical Sciences as the pathfinder, recruiting now; Life Sciences next; further faculties to follow" width="85%" >}}
+
+::: {.notes}
+What we're doing at UCL. Credit Tim Scanlon, who leads it.
+
+Research AI Engineers embedded in faculties, close to the research, but coordinated through ARC for platforms, a community of practice and professional development: the model that grew ARC.
+
+They give hands-on help, training, compute and seed projects, and co-supervise students. They're open-ended ARC posts, not short-term project roles: a career.
+
+Mathematical and Physical Sciences is the pathfinder, recruiting now; Life Sciences next; then further faculties as the evidence comes in.
+
+In UCL's AI strategy consultation this was the most strongly supported initiative. One colleague called it "a no brainer".
+:::
+
+# A call for action
 
 * Re-tool research computing and RSE teams for the AI age, now
 * Use frontier models *and* invest in open, European ones
+* Invest in local compute to host FAIR models
 * Recognise and hire Research AI Engineers
 
 ::: {.notes}
-Three asks of leaders in this room.
+Four asks of leaders in this room.
 
 Re-tool your research computing and RSE teams now; they're the machinery for this transformation, and they need to change.
 
 Values-aligned AI is how you keep your community with you: use frontier models, and invest, together, in open European ones.
+
+Invest in local compute to host FAIR models, so that open models run where we can see them, under our own governance.
 
 And recognise the profession: Research AI Engineers, with real career paths.
 
@@ -259,8 +250,10 @@ Thank you.
 # References {.smaller}
 
 - UCL ARC (2026). *AI-Assisted Software Development Policy for UCL Advanced Research Computing*. [doi:10.5522/04/34070631](https://doi.org/10.5522/04/34070631)
+- Storey (2026). *How Generative and Agentic AI Shift Concern from Technical Debt to Cognitive Debt*. [margaretstorey.com](https://margaretstorey.com/blog/2026/02/09/cognitive-debt/), 9 February 2026
+- Kosmyna et al. (2025). *Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task*. MIT Media Lab, [arXiv:2506.08872](https://arxiv.org/abs/2506.08872)
 - Shingleton, Hetherington & Basiri (2026). *Assertion Errors: Why AI-Generated Research Code Still Needs Epistemic Infrastructure*. Preprint, under review at CACM. [SSRN 7185258](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7185258)
 - Goldman (1976). Discrimination and perceptual knowledge. *J. Philosophy* 73, 771. [doi:10.2307/2025679](https://doi.org/10.2307/2025679)
-- Artificial Analysis Intelligence Index v5.0.1, [artificialanalysis.ai](https://artificialanalysis.ai/models/open-source), 11 November 2026
 - Apertus v1.5 technical report (2026). [arXiv:2610.15542](https://arxiv.org/abs/2610.15542)
+- Kaggle (2026). [MMLU-Pro leaderboard](https://www.kaggle.com/benchmarks/open-benchmarks/mmlu-pro), captured 23 October 2026
 - Epoch AI (2026). [Open and closed model gap](https://epoch.ai/data-insights/open-closed-eci-gap)
