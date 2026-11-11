@@ -13,7 +13,8 @@ permissions:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    # ubuntu-latest (26.04) splits Graphviz's neato layout out of the graphviz package
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
 

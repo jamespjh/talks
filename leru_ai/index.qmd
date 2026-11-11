@@ -41,7 +41,7 @@ Over the last decade and a half, research software engineering went from a name 
 
 At UCL, ARC and its predecessor started with three people. ARC is now about 120 people, about 60 of them research software engineers.
 
-The point: universities have absorbed a digital transformation of research before, and groups like ARC are how we did it.
+The point: universities have absorbed a digital transformation of research before, and digital research technology platforms like ARC are how we did it.
 :::
 
 # What digital research technology platforms do
@@ -138,6 +138,8 @@ Part of that gap is a deliberate choice: Apertus trains only on data whose owner
 And the dashed line is the closed frontier: Gemini, Claude and GPT score 90 to 93 on MMLU-Pro. That's not quite like-for-like, since they're finished, post-trained products and the bars are base models, but post-training doesn't close a gap that size. Epoch AI estimate the best open models have trailed the frontier by about four months on average this year.
 
 So we need both: frontier models for capability now, and open, especially European, models for provenance, sovereignty and trust. And Europe needs to invest to close the gap: the EUROPA consortium's 400-billion-parameter open model, OpenEuroLLM's first models due next month, and the AI Gigafactories.
+
+And running FAIR models where we can see them means our own compute: universities need to host them locally, not just rent access.
 :::
 
 # Fake barns
@@ -170,7 +172,7 @@ So AI doesn't make RSE less important. As the supply of plausible code goes up, 
 
 # Cognitive debt
 
-> A codebase partly written by a machine that no one fully understands, so that the research conclusions drawn from it are epistemically unsafe
+> The degree to which the community responsible for a technical artefact are unable to understand or explain it, due to accumulated uncomprehended machine construction
 
 ::: {.piece}
 After Storey (2026), [*How Generative and Agentic AI Shift Concern from Technical Debt to Cognitive Debt*](https://margaretstorey.com/blog/2026/02/09/cognitive-debt/); Kosmyna et al. (2025), [*Your Brain on ChatGPT*](https://www.media.mit.edu/publications/your-brain-on-chatgpt/)
@@ -200,10 +202,12 @@ Which one we get depends on whether RSE communities adapt now. Our policy expect
 
 # Research AI Engineers {.center}
 
-{{< image-credit src="assets/generated/professions.svg" alt="The research technology professions around trustworthy research: research software engineers, data stewards, data scientists, and, highlighted, research AI engineers" width="90%" >}}
+{{< image-credit src="assets/generated/professions.svg" alt="The research technology professions around trustworthy research: research software engineers, research infrastructure engineers, data stewards, data scientists, and, highlighted, research AI engineers" width="90%" >}}
 
 ::: {.notes}
-So here's my call: a new profession, the Research AI Engineer, alongside research software engineers, data stewards and data scientists.
+So here's my proposal: a new profession, the Research AI Engineer, alongside research software engineers, research infrastructure engineers, data stewards and data scientists.
+
+It's the profession that answers both halves of this talk: the people who run open, FAIR models where we can see them, and who tell real barns from fake ones.
 
 Not prompt engineers. People who build the epistemic infrastructure for AI-enabled research: who choose and run the models, frontier and open; who make AI-assisted research reproducible, attributable and auditable; and who teach researchers to tell real barns from fake ones.
 
@@ -228,7 +232,7 @@ In UCL's AI strategy consultation this was the most strongly supported initiativ
 
 # A call for action
 
-* Re-tool research computing and RSE teams for the AI age, now
+* Re-tool your digital research technology platforms for AI, now
 * Use frontier models *and* invest in open, European ones
 * Invest in local compute to host FAIR models
 * Recognise and hire Research AI Engineers
@@ -236,13 +240,13 @@ In UCL's AI strategy consultation this was the most strongly supported initiativ
 ::: {.notes}
 Four asks of leaders in this room.
 
-Re-tool your research computing and RSE teams now; they're the machinery for this transformation, and they need to change.
+Re-tool your digital research technology platforms now; they're the machinery for this transformation, and they need to change.
 
 Values-aligned AI is how you keep your community with you: use frontier models, and invest, together, in open European ones.
 
 Invest in local compute to host FAIR models, so that open models run where we can see them, under our own governance.
 
-And recognise the profession: Research AI Engineers, with real career paths.
+And recognise the profession: Research AI Engineers, with real career paths. Back to where Kathryn started: they are educators too, teaching our researchers to use AI in ways that make knowledge, not fake barns.
 
 Thank you.
 :::
